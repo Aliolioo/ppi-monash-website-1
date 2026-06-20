@@ -4,7 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dppivite-temp</title>
+    <meta name="theme-color" content="#B22234" />
+
+    <!-- Security: Content-Security-Policy locks resource loading to this origin
+         plus the few trusted hosts the site actually uses (Google Fonts +
+         Plausible analytics). If you self-host analytics or add a new provider,
+         update script-src / connect-src below. Some protections (X-Frame-Options,
+         HSTS, X-Content-Type-Options, Permissions-Policy) can only be sent as
+         HTTP headers — see SECURITY.md for the host config. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://plausible.io; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Default metadata. Per-page <Seo> (React 19 native metadata) overrides
+         title / description / OG tags at runtime once the app mounts. -->
+    <title>PPI Monash Malaysia — Eunoia</title>
+    <meta
+      name="description"
+      content="Perhimpunan Pelajar Indonesia (PPI) Monash Malaysia — the Indonesian student community at Monash University Malaysia."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PPI Monash Malaysia" />
+    <meta property="og:title" content="PPI Monash Malaysia — Eunoia" />
+    <meta
+      property="og:description"
+      content="The Indonesian student community at Monash University Malaysia."
+    />
+    <meta property="og:image" content="https://ppimonashmalaysia.com/og-default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <div id="root"></div>
