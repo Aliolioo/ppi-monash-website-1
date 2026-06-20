@@ -1,32 +1,30 @@
 // ============================================================================
 // <About> — History, mission, and community stats
 // ============================================================================
+import { Link } from "react-router-dom";
 import { FadeIn } from "./FadeIn";
 import { SITE_INFO, STATS } from "../config/siteConfig";
+import { useLang } from "../i18n/LanguageContext";
 
 export function About() {
+  const { t, tc } = useLang();
   return (
     <section className="section" id="about">
       <div className="about-grid">
         {/* Left: Text content */}
         <div>
           <FadeIn>
-            <div className="section-label">About Us</div>
+            <div className="section-label">{t("about.label")}</div>
             <h2 className="section-title">
-              A Home Away From Home Since {SITE_INFO.foundedYear}
+              {t("about.title", { year: SITE_INFO.foundedYear })}
             </h2>
             <p className="section-subtitle" style={{ marginBottom: 20 }}>
-              Established in August {SITE_INFO.foundedYear}, PPI Monash Malaysia
-              — {SITE_INFO.tagline} is a non-profit student association and a
-              branch of Perhimpunan Pelajar Indonesia se-Malaysia (PPIM).
+              {t("about.intro", {
+                year: SITE_INFO.foundedYear,
+                tagline: SITE_INFO.tagline,
+              })}
             </p>
-            <p className="about-body">
-              We collaborate closely with the Embassy of the Republic of
-              Indonesia in Kuala Lumpur, as well as various ministries and state
-              institutions. Our mission is to promote inclusivity, provide
-              platforms for fun-filled experiences, and support social growth for
-              Indonesian students at Monash.
-            </p>
+            <p className="about-body">{t("about.body")}</p>
           </FadeIn>
 
           <FadeIn delay={0.15}>
@@ -34,7 +32,7 @@ export function About() {
               {STATS.map((s, i) => (
                 <div className="stat-card" key={i}>
                   <div className="stat-number">{s.number}</div>
-                  <div className="stat-label">{s.label}</div>
+                  <div className="stat-label">{tc(s.label)}</div>
                 </div>
               ))}
             </div>
@@ -46,9 +44,9 @@ export function About() {
           <div className="about-visual">
             <div className="about-image-grid">
               {[
-                { bg: "linear-gradient(135deg, #B22234, #DC3545)", color: "#fff", icon: "🇮🇩", word: "Unity" },
-                { bg: "linear-gradient(135deg, #D4A843, #F0D78C)", color: "#1A1A1A", icon: "🎓", word: "Growth" },
-                { bg: "linear-gradient(135deg, #F5EDE0, #FFF8F0)", color: "#1A1A1A", icon: "🤝", word: "Friendship" },
+                { bg: "linear-gradient(135deg, #B22234, #DC3545)", color: "#fff", icon: "🇮🇩", word: t("about.wordUnity") },
+                { bg: "linear-gradient(135deg, #D4A843, #F0D78C)", color: "#1A1A1A", icon: "🎓", word: t("about.wordGrowth") },
+                { bg: "linear-gradient(135deg, #F5EDE0, #FFF8F0)", color: "#1A1A1A", icon: "🤝", word: t("about.wordFriendship") },
                 { bg: "linear-gradient(135deg, #1A1A1A, #4A4A4A)", color: "#fff", icon: "✨", word: "Eunoia" },
               ].map((card, i) => (
                 <div
@@ -65,11 +63,25 @@ export function About() {
             {/* Vision quote overlay */}
             <div className="vision-quote">
               <span className="quote-mark">"</span>
-              {SITE_INFO.vision}
+              {tc(SITE_INFO.vision)}
             </div>
           </div>
         </FadeIn>
       </div>
+      <FadeIn delay={0.3}>
+        <div className="about-history-strip">
+          <div>
+            <div className="section-label" style={{ marginBottom: 8 }}>
+              {t("about.historyLabel")}
+            </div>
+            <h3>{t("about.historyTitle", { year: SITE_INFO.foundedYear })}</h3>
+            <p>{t("about.historyDesc")}</p>
+          </div>
+          <Link to="/about/history" className="btn-secondary">
+            {t("about.viewHistory")} <span className="link-arrow">&rarr;</span>
+          </Link>
+        </div>
+      </FadeIn>
     </section>
   );
 }

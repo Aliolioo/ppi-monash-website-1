@@ -6,6 +6,7 @@
 //
 import { FadeIn } from "./FadeIn";
 import { DEPARTMENTS, COMMITTEE, SITE_INFO } from "../config/siteConfig";
+import { useLang } from "../i18n/LanguageContext";
 
 function getInitials(name) {
   if (!name || name === "TBD") return "?";
@@ -41,28 +42,30 @@ function MemberAvatar({ name, photo }) {
 }
 
 export function Team() {
+  const { t, tc } = useLang();
   return (
     <>
       {/* ── Department Cards ── */}
       <div className="dept-section" id="team">
         <FadeIn>
-          <div className="section-label">Our Team</div>
-          <h2 className="section-title">Departments</h2>
+          <div className="section-label">{t("team.label")}</div>
+          <h2 className="section-title">{t("team.deptTitle")}</h2>
           <p className="section-subtitle">
-            Led by President {COMMITTEE[0]?.members[0]?.name || "TBD"} and Vice
-            President {COMMITTEE[0]?.members[1]?.name || "TBD"} for{" "}
-            {SITE_INFO.currentYear}, our six departments work together to serve
-            the community.
+            {t("team.deptSubtitle", {
+              president: COMMITTEE[0]?.members[0]?.name || t("team.tbd"),
+              vp: COMMITTEE[0]?.members[1]?.name || t("team.tbd"),
+              year: SITE_INFO.currentYear,
+            })}
           </p>
         </FadeIn>
 
         <div className="dept-grid">
           {DEPARTMENTS.map((d, i) => (
-            <FadeIn key={d.name} delay={i * 0.06}>
+            <FadeIn key={d.folder} delay={i * 0.06}>
               <div className="dept-card">
                 <div className="dept-emoji">{d.emoji}</div>
-                <h3>{d.name}</h3>
-                <p>{d.desc}</p>
+                <h3>{tc(d.name)}</h3>
+                <p>{tc(d.desc)}</p>
               </div>
             </FadeIn>
           ))}
@@ -72,20 +75,20 @@ export function Team() {
       {/* ── Committee Member Grid ── */}
       <section className="committee-section" id="committee">
         <FadeIn>
-          <div className="section-label">Committee {SITE_INFO.currentYear}</div>
-          <h2 className="section-title">Meet the People Behind PPI</h2>
-          <p className="section-subtitle">
-            Our dedicated committee members who make everything happen.
-          </p>
+          <div className="section-label">
+            {t("team.committeeLabel", { term: SITE_INFO.committeeTerm })}
+          </div>
+          <h2 className="section-title">{t("team.title")}</h2>
+          <p className="section-subtitle">{t("team.committeeSubtitle")}</p>
         </FadeIn>
 
         {COMMITTEE.map((dept, di) => {
-          const deptInfo = DEPARTMENTS.find((d) => d.name === dept.dept);
+          const deptInfo = DEPARTMENTS.find((d) => d.name.en === dept.dept);
           return (
             <FadeIn key={dept.dept} delay={di * 0.05}>
               <div className="committee-dept">
                 <div className="committee-dept-title">
-                  {deptInfo?.emoji} {dept.dept}
+                  {deptInfo?.emoji} {deptInfo ? tc(deptInfo.name) : dept.dept}
                 </div>
                 <div className="committee-grid">
                   {dept.members.map((m, mi) => (
@@ -93,7 +96,7 @@ export function Team() {
                       <div className="member-card">
                         <MemberAvatar name={m.name} photo={m.photo} />
                         <div className="member-name">{m.name}</div>
-                        <div className="member-role">{m.role}</div>
+                        <div className="member-role">{tc(m.role)}</div>
                       </div>
                     </FadeIn>
                   ))}

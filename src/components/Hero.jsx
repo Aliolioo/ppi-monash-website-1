@@ -1,10 +1,13 @@
 // ============================================================================
 // <Hero> — Landing hero with animated particles and dual CTA
 // ============================================================================
+import { Link } from "react-router-dom";
 import { FadeIn } from "./FadeIn";
 import { SITE_INFO, SOCIAL_LINKS } from "../config/siteConfig";
+import { useLang } from "../i18n/LanguageContext";
 
 export function Hero() {
+  const { t, tc } = useLang();
   return (
     <section className="hero" id="home">
       <div className="hero-bg-pattern" />
@@ -24,15 +27,15 @@ export function Hero() {
 
         <FadeIn delay={0.1}>
           <h1>
-            Your Indonesian{" "}
-            <span className="highlight">Community</span>
+            {t("hero.titlePre")}
+            <span className="highlight">{t("hero.titleHighlight")}</span>
             <br />
-            at Monash Malaysia
+            {t("hero.titlePost")}
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.2}>
-          <p className="hero-desc">{SITE_INFO.description}</p>
+          <p className="hero-desc">{tc(SITE_INFO.description)}</p>
         </FadeIn>
 
         <FadeIn delay={0.3}>
@@ -44,26 +47,19 @@ export function Hero() {
               className="btn-primary"
             >
               <span className="btn-icon">💬</span>
-              Join Our Community
+              {t("hero.joinCommunity")}
               <span className="btn-arrow">→</span>
             </a>
-            <a
-              href="#about"
-              className="btn-secondary"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              Learn More
-            </a>
+            <Link to="/about" className="btn-secondary">
+              {t("common.learnMore")}
+            </Link>
           </div>
         </FadeIn>
 
         <FadeIn delay={0.45}>
           <div className="hero-scroll-hint">
             <div className="scroll-line" />
-            <span>Scroll to explore</span>
+            <span>{t("hero.scrollHint")}</span>
           </div>
         </FadeIn>
       </div>

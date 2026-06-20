@@ -1,12 +1,45 @@
 // ============================================================================
-// <Navbar> — Fixed top navigation with mobile hamburger menu
+// <Navbar> — Fixed top navigation with mobile hamburger menu + language switch
 // ============================================================================
 import { useState, useEffect } from "react";
+import { NavLink, Link } from "react-router-dom";
 import { NAV_ITEMS, SITE_INFO } from "../config/siteConfig";
+import { useLang } from "../i18n/LanguageContext";
 
-export function Navbar({ activeSection }) {
+function LangSwitcher({ className = "" }) {
+  const { lang, setLang, t } = useLang();
+  return (
+    <div
+      className={`lang-switcher ${className}`}
+      role="group"
+      aria-label={t("lang.label")}
+    >
+      <button
+        type="button"
+        className={`lang-option ${lang === "en" ? "active" : ""}`}
+        onClick={() => setLang("en")}
+        aria-pressed={lang === "en"}
+        title={t("lang.enFull")}
+      >
+        {t("lang.en")}
+      </button>
+      <button
+        type="button"
+        className={`lang-option ${lang === "id" ? "active" : ""}`}
+        onClick={() => setLang("id")}
+        aria-pressed={lang === "id"}
+        title={t("lang.idFull")}
+      >
+        {t("lang.id")}
+      </button>
+    </div>
+  );
+}
+
+export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { tc } = useLang();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -20,42 +53,40 @@ export function Navbar({ activeSection }) {
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
-  const scrollTo = (e, id) => {
-    e.preventDefault();
-    setMenuOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+  const closeMenu = () => setMenuOpen(false);
+  // TODO: when /about/history traffic grows, add an About dropdown here
+  //       with sub-links to /about and /about/history
+  const navClass = ({ isActive }) => isActive ? "active" : "";
 
   return (
     <>
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-        <a href="#home" className="nav-brand" onClick={(e) => scrollTo(e, "home")}>
+        <Link to="/" className="nav-brand" onClick={closeMenu}>
           <span className="logo-circle">PPI</span>
           <span className="brand-text">{SITE_INFO.name}</span>
-        </a>
+        </Link>
 
         <ul className="nav-links">
-          {NAV_ITEMS.map(({ label, id }) => (
-            <li key={id}>
-              <a
-                href={`#${id}`}
-                className={activeSection === id ? "active" : ""}
-                onClick={(e) => scrollTo(e, id)}
-              >
-                {label}
-              </a>
+          {NAV_ITEMS.map(({ label, path }) => (
+            <li key={path}>
+              <NavLink to={path} end={path === "/"} className={navClass}>
+                {tc(label)}
+              </NavLink>
             </li>
           ))}
         </ul>
 
-        <button
-          className={`hamburger ${menuOpen ? "open" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation menu"
-          aria-expanded={menuOpen}
-        >
-          <span /><span /><span />
-        </button>
+        <div className="nav-actions">
+          <LangSwitcher className="lang-switcher--desktop" />
+          <button
+            className={`hamburger ${menuOpen ? "open" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={menuOpen}
+          >
+            <span /><span /><span />
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu overlay */}
@@ -64,16 +95,19 @@ export function Navbar({ activeSection }) {
         role="dialog"
         aria-modal={menuOpen}
       >
-        {NAV_ITEMS.map(({ label, id }, i) => (
-          <a
-            key={id}
-            href={`#${id}`}
-            onClick={(e) => scrollTo(e, id)}
+        {NAV_ITEMS.map(({ label, path }, i) => (
+          <NavLink
+            key={path}
+            to={path}
+            end={path === "/"}
+            className={navClass}
+            onClick={closeMenu}
             style={{ animationDelay: `${i * 0.05}s` }}
           >
-            {label}
-          </a>
+            {tc(label)}
+          </NavLink>
         ))}
+        <LangSwitcher className="lang-switcher--mobile" />
       </div>
     </>
   );
