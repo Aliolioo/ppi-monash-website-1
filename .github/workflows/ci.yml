@@ -1,0 +1,21 @@
+name: CI
+
+# Runs lint + build on every pull request and on pushes to non-main branches,
+# so broken code is caught before it can be merged into main.
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+jobs:
+  lint-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
