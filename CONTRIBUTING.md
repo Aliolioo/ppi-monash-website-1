@@ -33,7 +33,10 @@ Useful scripts:
 
 ```
 src/
-├── config/siteConfig.js   ⭐ ALL content/data (events, articles, team, FAQ, …)
+├── config/                ⭐ ALL content/data, split per section:
+│   ├── siteConfig.js          barrel — import from here, don't edit
+│   ├── events.js  articles.js  guides.js  faqs.js
+│   ├── team.js  leadership.js  partners.js  site.js
 ├── i18n/                  EN/ID translations (strings.js) + helpers
 ├── pages/                 one file per route (/about, /events/:id, …)
 ├── components/            shared UI (Navbar, cards, Hero, forms, …)
@@ -42,8 +45,10 @@ src/
 docs/                      content & ops guides (forms, article migration)
 ```
 
-**90% of edits are just `src/config/siteConfig.js`.** See `docs/` for content
-guides (e.g. `docs/MIGRATING_ARTICLES.md`, `docs/FORMS.md`).
+**90% of edits are just editing a file in `src/config/`** (the section you're
+changing — e.g. `events.js`). Components still `import { … } from
+"../config/siteConfig"`; that barrel re-exports every section. See `docs/` for
+content guides (e.g. `docs/MIGRATING_ARTICLES.md`, `docs/FORMS.md`).
 
 ## 4. The workflow (please don't commit straight to `main`)
 
@@ -64,14 +69,16 @@ git push -u origin feat/short-description
 - Open a **Pull Request**, get a quick review, then **Merge**. CI (lint + build)
   runs automatically on every PR; it must be green to merge.
 
-## 5. ⚠️ The one big coordination rule: `siteConfig.js`
+## 5. Editing content without merge conflicts
 
-Almost all content lives in the single large file `src/config/siteConfig.js`.
-If two people edit it at the same time you'll get merge conflicts. So:
+Content is split into **per-section files** under `src/config/` (`events.js`,
+`articles.js`, `team.js`, `guides.js`, `faqs.js`, `leadership.js`,
+`partners.js`, `site.js`), all re-exported by `siteConfig.js`. So two people
+editing **different** sections no longer collide. Just:
 
-- **Say what you're touching** ("I'm editing events, you take articles").
-- Keep PRs **small** and merge them quickly.
-- Always `git pull` before starting.
+- Edit the **section file** (e.g. `events.js`), **not** the barrel `siteConfig.js`.
+- Only coordinate if you're both editing the **same** section file.
+- Keep PRs small and `git pull` before starting.
 
 ## 6. Bilingual content (EN / ID)
 

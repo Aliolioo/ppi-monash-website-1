@@ -29,7 +29,9 @@ fields take either a plain string or `{ en, id }`.
 
 ```
 src/
-├── config/siteConfig.js   ⭐ all content/data
+├── config/                ⭐ content/data, split per section
+│   ├── siteConfig.js          barrel (import from here)
+│   └── events.js, articles.js, team.js, faqs.js, …
 ├── i18n/                  EN/ID translations + helpers
 ├── pages/                 one file per route
 ├── components/            shared UI (navbar, cards, hero, forms)
