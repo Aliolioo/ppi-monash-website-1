@@ -1,21 +1,29 @@
 // ============================================================================
 // <EventFeedback> — "What events do you want?" preferences form
 // ============================================================================
-// Client-side only: validates that at least one event type is picked, then
-// shows a thank-you state. Nothing is persisted.
-// TODO: wire submissions to a Google Form / backend / email service.
+// Submits to a Google Form (responses collect in its linked Google Sheet).
+// `value` must match each checkbox option's text in the Google Form EXACTLY.
 //
 import { useState } from "react";
 import { FadeIn } from "./FadeIn";
 import { useLang } from "../i18n/LanguageContext";
 
+// Google Form endpoint + field IDs (from the form's "pre-filled link").
+// connect-src in index.html must allow https://docs.google.com.
+const GFORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdmxE2gzrfYGpQRCIZhyavXvtZGGf06Lj2gZkFPzwFebuLK9Q/formResponse";
+const ENTRY_TYPES = "entry.1039784956"; // event-type checkboxes (multi)
+const ENTRY_COMMENT = "entry.561303309"; // comment
+
+// `value` is sent to Google (must match the form's option text); `key` is the
+// translated label shown on the chip.
 const OPTIONS = [
-  { id: "cultural", key: "feedback.optCultural" },
-  { id: "sports", key: "feedback.optSports" },
-  { id: "academic", key: "feedback.optAcademic" },
-  { id: "social", key: "feedback.optSocial" },
-  { id: "workshops", key: "feedback.optWorkshops" },
-  { id: "other", key: "feedback.optOther" },
+  { id: "cultural", key: "feedback.optCultural", value: "Cultural" },
+  { id: "sports", key: "feedback.optSports", value: "Sports" },
+  { id: "academic", key: "feedback.optAcademic", value: "Academic" },
+  { id: "social", key: "feedback.optSocial", value: "Social" },
+  { id: "workshops", key: "feedback.optWorkshops", value: "Workshops" },
+  { id: "other", key: "feedback.optOther", value: "Other" },
 ];
 
 export function EventFeedback() {
@@ -23,6 +31,7 @@ export function EventFeedback() {
   const [picked, setPicked] = useState([]);
   const [comment, setComment] = useState("");
   const [error, setError] = useState("");
+  const [sending, setSending] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   const toggle = (id) => {
@@ -32,16 +41,35 @@ export function EventFeedback() {
     if (error) setError("");
   };
 
-  const handleSubmit = (ev) => {
+  const handleSubmit = async (ev) => {
     ev.preventDefault();
     if (picked.length === 0) {
       setError(t("feedback.errPick"));
       return;
     }
-    // TODO: send { picked, comment } to a Google Form / backend.
-    setSubmitted(true);
-    setPicked([]);
-    setComment("");
+    setSending(true);
+    setError("");
+
+    const body = new URLSearchParams();
+    picked.forEach((id) => {
+      const opt = OPTIONS.find((o) => o.id === id);
+      if (opt) body.append(ENTRY_TYPES, opt.value);
+    });
+    if (comment.trim()) body.append(ENTRY_COMMENT, comment.trim());
+
+    try {
+      // Google Forms doesn't send CORS headers, so the response is opaque
+      // (we can't read success/failure) — assume success unless the network
+      // request itself throws.
+      await fetch(GFORM_URL, { method: "POST", mode: "no-cors", body });
+      setSubmitted(true);
+      setPicked([]);
+      setComment("");
+    } catch {
+      setError(t("feedback.errSubmit"));
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -101,8 +129,8 @@ export function EventFeedback() {
               </div>
 
               <div className="form-footer">
-                <button type="submit" className="btn-primary">
-                  {t("feedback.submit")}
+                <button type="submit" className="btn-primary" disabled={sending}>
+                  {sending ? t("feedback.sending") : t("feedback.submit")}
                   <span className="btn-arrow">&rarr;</span>
                 </button>
               </div>

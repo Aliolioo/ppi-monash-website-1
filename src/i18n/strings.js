@@ -200,6 +200,7 @@ export const UI_STRINGS = {
     "form.messagePlaceholder": "Tell us about your collaboration idea…",
     "form.send": "Send Inquiry",
     "form.sending": "Sending…",
+    "form.errSubmit": "Couldn't send — please try again.",
     "form.privacyNote": "By submitting, you agree to our",
     "form.privacyPolicy": "Privacy Policy",
     "form.successTitle": "Inquiry Received",
@@ -278,6 +279,8 @@ export const UI_STRINGS = {
     "feedback.commentLabel": "Anything else? (optional)",
     "feedback.commentPlaceholder": "Suggest a specific event or idea…",
     "feedback.submit": "Send Feedback",
+    "feedback.sending": "Sending…",
+    "feedback.errSubmit": "Couldn't send — please try again.",
     "feedback.errPick": "Please select at least one event type.",
     "feedback.successTitle": "Thanks for your feedback!",
     "feedback.successDesc":
@@ -533,6 +536,7 @@ export const UI_STRINGS = {
     "form.messagePlaceholder": "Ceritakan ide kolaborasimu…",
     "form.send": "Kirim Pertanyaan",
     "form.sending": "Mengirim…",
+    "form.errSubmit": "Gagal mengirim — coba lagi.",
     "form.privacyNote": "Dengan mengirim, kamu menyetujui",
     "form.privacyPolicy": "Kebijakan Privasi",
     "form.successTitle": "Pertanyaan Diterima",
@@ -611,6 +615,8 @@ export const UI_STRINGS = {
     "feedback.commentLabel": "Ada lagi? (opsional)",
     "feedback.commentPlaceholder": "Usulkan acara atau ide tertentu…",
     "feedback.submit": "Kirim Masukan",
+    "feedback.sending": "Mengirim…",
+    "feedback.errSubmit": "Gagal mengirim — coba lagi.",
     "feedback.errPick": "Pilih setidaknya satu jenis acara.",
     "feedback.successTitle": "Terima kasih atas masukanmu!",
     "feedback.successDesc":

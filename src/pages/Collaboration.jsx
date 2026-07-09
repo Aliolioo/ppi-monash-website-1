@@ -31,8 +31,21 @@ function CollabTypeBadge({ type }) {
   return <span className="collab-type-badge">{tcat(type)}</span>;
 }
 
-// ── Inquiry form (client-side only — TODO: wire to backend / email service) ──
+// ── Inquiry form → posts to a Google Form (responses in its linked Sheet) ──
+// connect-src in index.html must allow https://docs.google.com.
 
+const GFORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdjZs7ghYe6IYNgteJbjIHHPQmYlgKI7Nuw8Ph_yGXFbbgnMg/formResponse";
+const ENTRY = {
+  name:    "entry.63024457",
+  org:     "entry.1933749655",
+  email:   "entry.160829602",
+  type:    "entry.1537627243",
+  message: "entry.1510937448",
+};
+
+// If "Inquiry Type" is a multiple-choice question in the Google Form, these
+// values must match its options EXACTLY (a free-text question accepts anything).
 const INQUIRY_TYPES = [
   "Sponsorship",
   "Joint Event",
@@ -47,6 +60,7 @@ function InquiryForm() {
   const { t } = useLang();
   const [form, setForm] = useState(EMPTY_FORM);
   const [errors, setErrors] = useState({});
+  const [sending, setSending] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   const validate = () => {
@@ -67,13 +81,31 @@ function InquiryForm() {
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: undefined }));
   };
 
-  const handleSubmit = (ev) => {
+  const handleSubmit = async (ev) => {
     ev.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
-    setSubmitted(true);
-    setForm(EMPTY_FORM);
+    setSending(true);
     setErrors({});
+
+    const body = new URLSearchParams();
+    body.append(ENTRY.name, form.name);
+    body.append(ENTRY.org, form.org);
+    body.append(ENTRY.email, form.email);
+    body.append(ENTRY.type, form.type);
+    body.append(ENTRY.message, form.message);
+
+    try {
+      // no-cors: Google's response is opaque, so we can't read success — the
+      // catch only fires on a true network failure.
+      await fetch(GFORM_URL, { method: "POST", mode: "no-cors", body });
+      setSubmitted(true);
+      setForm(EMPTY_FORM);
+    } catch {
+      setErrors({ submit: t("form.errSubmit") });
+    } finally {
+      setSending(false);
+    }
   };
 
   if (submitted) {
@@ -150,10 +182,11 @@ function InquiryForm() {
         {errors.message && <span className="field-error">{errors.message}</span>}
       </div>
       <div className="form-footer">
-        <button type="submit" className="btn-primary">
-          {t("form.send")}
+        <button type="submit" className="btn-primary" disabled={sending}>
+          {sending ? t("form.sending") : t("form.send")}
           <span className="btn-arrow">&rarr;</span>
         </button>
+        {errors.submit && <span className="field-error">{errors.submit}</span>}
         <p className="form-privacy">
           {t("form.privacyNote")}{" "}
           <Link to="/privacy">{t("form.privacyPolicy")}</Link>.
