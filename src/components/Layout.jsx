@@ -3,6 +3,7 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Contact";
 import { ScrollToTop } from "./ScrollToTop";
 import { Analytics } from "./Analytics";
+import { ConsentBanner } from "./ConsentBanner";
 
 export default function Layout() {
   return (
@@ -12,6 +13,7 @@ export default function Layout() {
       <Navbar />
       <Outlet />
       <Footer />
+      <ConsentBanner />
     </>
   );
 }

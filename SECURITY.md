@@ -10,14 +10,14 @@ configured at the host.
 
 - **Content-Security-Policy** (meta tag in `index.html`) restricts resource
   loading to this origin plus the only trusted third parties the site uses:
-  - scripts: self + `https://plausible.io` (analytics, opt-in)
+  - scripts: self + `https://www.googletagmanager.com` (Google Analytics, consent-gated)
   - styles: self + inline styles + `https://fonts.googleapis.com`
   - fonts: self + `https://fonts.gstatic.com`
   - images: self + `data:` + `https:`
-  - connections: self + `https://plausible.io`
+  - connections: self + `https://docs.google.com` (Google Forms) + `*.google-analytics.com` / `*.googletagmanager.com`
   - `object-src 'none'`, `base-uri 'self'`, `form-action 'self'`, `upgrade-insecure-requests`
-  > If you change analytics providers or self-host Plausible, update `script-src`
-  > and `connect-src` accordingly.
+  > If you change analytics or form providers, update `script-src` / `connect-src`
+  > accordingly.
 - **Referrer-Policy** `strict-origin-when-cross-origin` (meta tag).
 - **External links** all use `target="_blank"` together with
   `rel="noopener noreferrer"` (prevents tab-nabbing / referrer leakage).
@@ -28,9 +28,10 @@ configured at the host.
   migrated or external article content.
 - **No `dangerouslySetInnerHTML`** anywhere — all content renders as escaped
   React children, so stored content cannot inject markup.
-- **No secrets in the bundle** — analytics is opt-in via a `VITE_PLAUSIBLE_DOMAIN`
-  env var; `.env` is git-ignored and `.env.example` documents the (non-secret)
-  config. There are no API keys in the client.
+- **Analytics is consent-gated** — Google Analytics only loads after the visitor
+  accepts the cookie banner, and only when `VITE_GA_MEASUREMENT_ID` is set (off by
+  default). `.env` is git-ignored; `.env.example` documents the (non-secret)
+  config. There are no API keys or secrets in the client bundle.
 - **Form input limits** — the inquiry and feedback forms cap field lengths
   (`maxLength`) and are client-side only (nothing is transmitted or stored yet).
 - **Dependencies** — `npm audit` is clean (run it before each release).

@@ -7,14 +7,14 @@
     <meta name="theme-color" content="#B22234" />
 
     <!-- Security: Content-Security-Policy locks resource loading to this origin
-         plus the few trusted hosts the site actually uses (Google Fonts +
-         Plausible analytics). If you self-host analytics or add a new provider,
-         update script-src / connect-src below. Some protections (X-Frame-Options,
-         HSTS, X-Content-Type-Options, Permissions-Policy) can only be sent as
-         HTTP headers — see SECURITY.md for the host config. -->
+         plus the few trusted hosts the site uses: Google Fonts, Google Forms
+         (form submissions), and Google Analytics / Tag Manager. If you change
+         analytics providers, update script-src / connect-src below. Some
+         protections (X-Frame-Options, HSTS, X-Content-Type-Options,
+         Permissions-Policy) can only be sent as HTTP headers — see SECURITY.md. -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://plausible.io https://docs.google.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
+      content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.googletagmanager.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
     />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 

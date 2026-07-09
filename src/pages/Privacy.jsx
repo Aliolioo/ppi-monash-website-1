@@ -51,7 +51,8 @@ const CONTENT = {
         h: "Third-Party Services",
         paras: ["We use third-party platforms as part of our community operations. Each platform has its own privacy policy that applies when you interact with it:"],
         list: [
-          { label: "Google Forms & Google Drive", text: "used for event registrations, surveys, and shared materials." },
+          { label: "Google Forms & Google Drive", text: "used for event registrations, inquiries, surveys, and shared materials." },
+          { label: "Google Analytics", text: "used to understand aggregate site usage. It only loads and sets cookies after you accept the cookie banner; you can decline. See the Cookies section below." },
           { label: "WhatsApp", text: "community groups are voluntary; WhatsApp's privacy policy applies once you join." },
           { label: "Instagram, TikTok, YouTube", text: "our social media presence; those platforms' policies apply when you interact with our content there." },
         ],
@@ -77,7 +78,7 @@ const CONTENT = {
       },
       {
         h: "Cookies",
-        paras: ["This website may set essential cookies required for navigation and user preferences. We do not currently deploy advertising, analytics-tracking, or third-party cookies. If this changes, this section and the “Last updated” date will be revised accordingly."],
+        paras: ["This website may set essential cookies required for navigation and user preferences. With your consent, we also use Google Analytics cookies to measure aggregate site usage — these load only after you click “Accept” on the cookie banner, and you can decline (or clear your choice via your browser). We do not use advertising cookies. If our cookie use changes, this section and the “Last updated” date will be revised accordingly."],
       },
       {
         h: "Children's Privacy",
@@ -133,7 +134,8 @@ const CONTENT = {
         h: "Layanan Pihak Ketiga",
         paras: ["Kami menggunakan platform pihak ketiga sebagai bagian dari operasional komunitas. Setiap platform memiliki kebijakan privasinya sendiri yang berlaku saat kamu berinteraksi dengannya:"],
         list: [
-          { label: "Google Forms & Google Drive", text: "digunakan untuk pendaftaran acara, survei, dan berbagi materi." },
+          { label: "Google Forms & Google Drive", text: "digunakan untuk pendaftaran acara, pertanyaan, survei, dan berbagi materi." },
+          { label: "Google Analytics", text: "digunakan untuk memahami penggunaan situs secara agregat. Hanya dimuat dan menyetel cookie setelah kamu menerima banner cookie; kamu bisa menolak. Lihat bagian Cookie di bawah." },
           { label: "WhatsApp", text: "grup komunitas bersifat sukarela; kebijakan privasi WhatsApp berlaku setelah kamu bergabung." },
           { label: "Instagram, TikTok, YouTube", text: "kehadiran media sosial kami; kebijakan platform tersebut berlaku saat kamu berinteraksi dengan konten kami di sana." },
         ],
@@ -159,7 +161,7 @@ const CONTENT = {
       },
       {
         h: "Cookie",
-        paras: ["Situs ini mungkin menyetel cookie esensial yang diperlukan untuk navigasi dan preferensi pengguna. Saat ini kami tidak menggunakan cookie iklan, pelacakan analitik, atau pihak ketiga. Jika hal ini berubah, bagian ini dan tanggal “Terakhir diperbarui” akan direvisi."],
+        paras: ["Situs ini mungkin menyetel cookie esensial yang diperlukan untuk navigasi dan preferensi pengguna. Dengan persetujuanmu, kami juga menggunakan cookie Google Analytics untuk mengukur penggunaan situs secara agregat — cookie ini hanya dimuat setelah kamu mengeklik “Terima” pada banner cookie, dan kamu bisa menolak (atau menghapus pilihanmu melalui browser). Kami tidak menggunakan cookie iklan. Jika penggunaan cookie kami berubah, bagian ini dan tanggal “Terakhir diperbarui” akan direvisi."],
       },
       {
         h: "Privasi Anak",

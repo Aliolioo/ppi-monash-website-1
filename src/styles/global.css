@@ -2090,3 +2090,63 @@ select.form-control { appearance: none; cursor: pointer; }
   border-color: var(--red-deep);
   color: #fff;
 }
+
+/* ─── Cookie consent banner ──────────────────────────────────────────────── */
+.consent-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 200;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  background: var(--charcoal);
+  color: var(--white);
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-hover);
+}
+.consent-text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex: 1 1 260px;
+}
+.consent-text a {
+  color: var(--gold-soft);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.consent-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.consent-actions .btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--white);
+  padding: 9px 18px;
+}
+.consent-actions .btn-secondary:hover {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+.consent-actions .btn-primary {
+  padding: 9px 20px;
+}
+@media (max-width: 560px) {
+  .consent-banner { flex-direction: column; align-items: stretch; }
+  .consent-actions { justify-content: flex-end; }
+}
+
+/* On very small phones, drop the brand text (keep the "PPI" logo) so the
+   language switcher + hamburger always fit in the top bar. */
+@media (max-width: 430px) {
+  .brand-text { display: none; }
+}

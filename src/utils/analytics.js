@@ -1,62 +1,85 @@
 // ============================================================================
-// Cookieless analytics — Plausible / GoatCounter compatible
+// Google Analytics 4 (GA4) with cookie consent
 // ============================================================================
-// Privacy-first: no cookies, no cross-site tracking, no consent banner needed.
-// This keeps the Privacy Policy ("we do not deploy tracking cookies") accurate.
+// GA4 uses cookies, so it only loads and tracks AFTER the visitor accepts via
+// the consent banner. It is off entirely unless VITE_GA_MEASUREMENT_ID is set,
+// so local dev and un-configured builds send nothing.
 //
-// Activation is opt-in via environment variables — when none are set (e.g. local
-// dev), every function here is a no-op, so nothing loads and no requests fire.
+// Configure in .env:  VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 //
-// Configure in a .env file (see .env.example):
-//   VITE_PLAUSIBLE_DOMAIN  — the site domain registered in your analytics
-//                            dashboard, e.g. "ppimonashmalaysia.com"
-//   VITE_PLAUSIBLE_SRC     — (optional) script URL; defaults to Plausible's
-//                            manual-pageview script so SPA navigations are
-//                            counted explicitly on each route change.
-//
-// To self-host or use GoatCounter/Umami instead, point VITE_PLAUSIBLE_SRC at
-// that provider's script — the manual pageview call below uses the global
-// `window.plausible()` queue, which the Plausible-compatible endpoints expose.
-//
-const DOMAIN = import.meta.env.VITE_PLAUSIBLE_DOMAIN;
-const SRC =
-  import.meta.env.VITE_PLAUSIBLE_SRC ||
-  "https://plausible.io/js/script.manual.js";
+const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
+const CONSENT_KEY = "ppi-analytics-consent"; // "granted" | "denied"
 
-let initialized = false;
+let loaded = false;
 
-export function isAnalyticsEnabled() {
-  return Boolean(DOMAIN);
+// Is GA configured at all (a Measurement ID is present)?
+export function isAnalyticsConfigured() {
+  return Boolean(GA_ID);
 }
 
-// Injects the analytics script once. Safe to call repeatedly. No-op when no
-// domain is configured or when running outside the browser.
-export function initAnalytics() {
-  if (initialized || !isAnalyticsEnabled() || typeof document === "undefined") {
-    return;
+// Stored consent: "granted", "denied", or null (undecided).
+export function getConsent() {
+  if (typeof window === "undefined") return null;
+  try {
+    return window.localStorage.getItem(CONSENT_KEY);
+  } catch {
+    return null;
   }
-  initialized = true;
+}
 
-  // Stub + queue so pageview calls fired before the script finishes loading
-  // are replayed once it's ready.
-  window.plausible =
-    window.plausible ||
-    function () {
-      (window.plausible.q = window.plausible.q || []).push(arguments);
-    };
+function persistConsent(value) {
+  try {
+    window.localStorage.setItem(CONSENT_KEY, value);
+  } catch {
+    /* ignore private-mode failures */
+  }
+}
+
+// Injects gtag.js once. Only called after consent is granted.
+function loadGA() {
+  if (loaded || !GA_ID || typeof document === "undefined") return;
+  loaded = true;
 
   const script = document.createElement("script");
-  script.defer = true;
-  script.dataset.domain = DOMAIN;
-  script.src = SRC;
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
   document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () {
+    window.dataLayer.push(arguments);
+  };
+  window.gtag("js", new Date());
+  // We fire page_view manually on each route change, so turn off the automatic
+  // one to avoid double-counting SPA navigations.
+  window.gtag("config", GA_ID, { send_page_view: false });
 }
 
-// Records a single pageview. With the manual script, Plausible reads the
-// current document URL automatically, so route changes just need this called
-// after the URL has updated. No-op when analytics is disabled.
+// On app mount: if the visitor already granted consent in a past visit, load
+// GA right away.
+export function initAnalytics() {
+  if (GA_ID && getConsent() === "granted") loadGA();
+}
+
+// Visitor accepted the consent banner.
+export function grantConsent() {
+  persistConsent("granted");
+  loadGA();
+  trackPageview(); // count the page they were on when they accepted
+}
+
+// Visitor declined.
+export function denyConsent() {
+  persistConsent("denied");
+}
+
+// Records a pageview. No-op unless GA is configured AND consented AND loaded.
 export function trackPageview() {
-  if (!isAnalyticsEnabled() || typeof window === "undefined") return;
-  if (typeof window.plausible !== "function") return;
-  window.plausible("pageview");
+  if (!GA_ID || getConsent() !== "granted") return;
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", "page_view", {
+    page_path: window.location.pathname + window.location.search,
+    page_location: window.location.href,
+    page_title: document.title,
+  });
 }

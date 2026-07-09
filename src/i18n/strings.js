@@ -345,6 +345,14 @@ export const UI_STRINGS = {
     "notFound.desc":
       "The page you're looking for doesn't exist or may have moved.",
     "notFound.home": "Back to Home",
+
+    // Cookie consent (Google Analytics)
+    "consent.title": "Cookie notice",
+    "consent.message":
+      "We use Google Analytics cookies to understand how visitors use the site.",
+    "consent.learnMore": "Learn more",
+    "consent.accept": "Accept",
+    "consent.decline": "Decline",
   },
 
   id: {
@@ -685,5 +693,13 @@ export const UI_STRINGS = {
     "notFound.desc":
       "Halaman yang kamu cari tidak ada atau mungkin telah dipindahkan.",
     "notFound.home": "Kembali ke Beranda",
+
+    // Cookie consent (Google Analytics)
+    "consent.title": "Pemberitahuan Cookie",
+    "consent.message":
+      "Kami menggunakan cookie Google Analytics untuk memahami cara pengunjung menggunakan situs ini.",
+    "consent.learnMore": "Pelajari lebih lanjut",
+    "consent.accept": "Terima",
+    "consent.decline": "Tolak",
   },
 };
