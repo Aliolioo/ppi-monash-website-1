@@ -66,7 +66,7 @@ export function Footer() {
         <Link to="/collaboration">{t("footer.collaboration")}</Link>
         <Link to="/collaboration#partners">{t("footer.partners")}</Link>
         <Link to="/network">{t("footer.network")}</Link>
-        <a href="/collaboration#inquiry">{t("footer.inquiries")}</a>
+        <Link to="/collaboration#inquiry">{t("footer.inquiries")}</Link>
       </div>
       <p>
         &copy; {SITE_INFO.currentYear} {SITE_INFO.name} &middot;{" "}

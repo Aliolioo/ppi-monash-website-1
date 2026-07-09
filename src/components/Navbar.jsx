@@ -107,7 +107,6 @@ export function Navbar() {
             {tc(label)}
           </NavLink>
         ))}
-        <LangSwitcher className="lang-switcher--mobile" />
       </div>
     </>
   );

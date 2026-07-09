@@ -1727,7 +1727,7 @@ select.form-control { appearance: none; cursor: pointer; }
   .navbar { padding: 0 20px; }
   .nav-links { display: none; }
   .hamburger { display: block; }
-  .lang-switcher--desktop { display: none; }
+  /* keep the EN/ID switcher visible in the top bar on mobile */
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
   .dept-grid { grid-template-columns: 1fr 1fr; }
   .events-grid { grid-template-columns: 1fr; }
