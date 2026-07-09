@@ -30,6 +30,7 @@ import Collaboration from "./pages/Collaboration";
 import PPINetwork from "./pages/PPINetwork";
 import Privacy from "./pages/Privacy";
 import Organization from "./pages/Organization";
+import NotFound from "./pages/NotFound";
 import "./styles/global.css";
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
@@ -56,6 +57,7 @@ const router = createBrowserRouter(
         { path: "contact", element: <ContactPage /> },
         { path: "privacy", element: <Privacy /> },
         { path: "organization", element: <Organization /> },
+        { path: "*", element: <NotFound /> },
       ],
     },
   ],

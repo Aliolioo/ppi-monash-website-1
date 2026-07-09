@@ -341,6 +341,10 @@ export const UI_STRINGS = {
 
     // 404 / generic
     "notFound.back": "Back",
+    "notFound.title": "Page Not Found",
+    "notFound.desc":
+      "The page you're looking for doesn't exist or may have moved.",
+    "notFound.home": "Back to Home",
   },
 
   id: {
@@ -677,5 +681,9 @@ export const UI_STRINGS = {
 
     // 404 / generic
     "notFound.back": "Kembali",
+    "notFound.title": "Halaman Tidak Ditemukan",
+    "notFound.desc":
+      "Halaman yang kamu cari tidak ada atau mungkin telah dipindahkan.",
+    "notFound.home": "Kembali ke Beranda",
   },
 };
