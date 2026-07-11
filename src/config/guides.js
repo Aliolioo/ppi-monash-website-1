@@ -352,13 +352,13 @@ Try to open your account within your first two weeks. Some branches accept your 
 
 ## Getting Around Sunway Itself
 
-- The **BRT Sunway Line** connects most of Bandar Sunway, including the mall and nearby residences, to the USJ7 KTM station
+- The **BRT Sunway Line** connects most of Bandar Sunway, including the mall and nearby residences, to the USJ7 LRT station
 - Walking is genuinely practical for most errands — Sunway Pyramid, the campus, and most condos are within 15-20 minutes of each other
 - Grab is convenient late at night or when carrying heavy shopping, but adds up quickly if used daily
 
 ## Getting Into Kuala Lumpur
 
-- Take the BRT to USJ7, then connect to the **KTM Komuter** line into KL Sentral
+- Take the BRT to USJ7, then connect to the **LRT (Kelana Jaya Line)** into KL Sentral
 - Total travel time is usually 45–60 minutes depending on connections
 - Grab into KL is faster but considerably more expensive, especially during peak hours or rain
 
@@ -465,14 +465,15 @@ Try to open your account within your first two weeks. Some branches accept your 
 
 ## Getting Involved Beyond Events
 
-PPI runs six departments, each looking for members at different points in the year:
+PPI runs seven departments, each looking for members at different points in the year:
 
 - **Executive** — leadership and overall coordination
-- **Documentation** — photography and videography at events
-- **Media & Creative** — design and social media content
-- **Welfare** — student wellbeing and support initiatives
 - **Events** — planning and running PPI's events calendar
-- **External Relations** — partnerships with other student societies
+- **Logistics** — operations, venues, and equipment for events
+- **Public Relations** — partnerships and outreach with other communities
+- **Design** — graphic design and event branding
+- **Documentation** — photography and videography at events
+- **Social Media** — content and the community's social media presence
 
 ## How Recruitment Usually Works
 

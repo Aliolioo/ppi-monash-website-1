@@ -210,8 +210,8 @@ export const FAQS = [
       id: "Bagaimana cara kerja BRT Sunway Line, dan apakah gratis?",
     },
     a: {
-      en: "The BRT Sunway Line connects Sunway Pyramid and nearby stops (including close to campus) to USJ7 KTM station. It is not free but fares are low (around RM 1–2 per trip). From USJ7 you can connect to KL via KTM Komuter. It's the most cost-effective way to travel into KL regularly.",
-      id: "BRT Sunway Line menghubungkan Sunway Pyramid dan halte di sekitarnya (termasuk dekat kampus) ke stasiun KTM USJ7. Tidak gratis, tetapi tarifnya murah (sekitar RM 1–2 per perjalanan). Dari USJ7 kamu bisa melanjutkan ke KL via KTM Komuter. Ini cara paling hemat untuk bepergian ke KL secara rutin.",
+      en: "The BRT Sunway Line connects Sunway Pyramid and nearby stops (including close to campus) to USJ7 LRT station. It is not free but fares are low (around RM 1–2 per trip). From USJ7 you can connect to KL via the LRT (Kelana Jaya Line). It's the most cost-effective way to travel into KL regularly.",
+      id: "BRT Sunway Line menghubungkan Sunway Pyramid dan halte di sekitarnya (termasuk dekat kampus) ke stasiun LRT USJ7. Tidak gratis, tetapi tarifnya murah (sekitar RM 1–2 per perjalanan). Dari USJ7 kamu bisa melanjutkan ke KL via LRT (Kelana Jaya Line). Ini cara paling hemat untuk bepergian ke KL secara rutin.",
     },
     category: "Transport",
     lastUpdated: "2026-03-28",
