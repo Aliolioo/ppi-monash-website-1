@@ -53,7 +53,7 @@ export const UI_STRINGS = {
     "home.widerCommunity": "Wider Community",
     "home.networkTitle": "Part of the PPI Malaysia Network",
     "home.networkDesc":
-      "PPI Monash is one of over a dozen Indonesian student communities across Malaysia. We collaborate, share events, and support each other as part of the wider PPIM network.",
+      "PPI Monash is one of many Indonesian student communities across Malaysia. We collaborate, share events, and support each other as part of the wider PPIM network.",
     "home.exploreNetwork": "Explore the full network",
 
     // Hero
@@ -220,13 +220,13 @@ export const UI_STRINGS = {
     "collab.label": "Collaboration",
     "collab.heroTitle": "Building Bridges, Together",
     "collab.heroSubtitle":
-      "From KBRI Kuala Lumpur to PPI Jerman, from Monash clubs to fellow PPI branches across Malaysia — these are the partnerships that make our community stronger.",
+      "From KBRI Kuala Lumpur to PPIM, from Monash clubs to fellow PPI branches across Malaysia — these are the partnerships that make our community stronger.",
     "collab.catPartnersTitle": "Partners & Sponsors",
     "collab.catPartnersDesc":
       "Institutions, sponsors, and campus organizations who make our work possible.",
     "collab.catNetworkTitle": "PPI Malaysia Network",
     "collab.catNetworkDesc":
-      "Twelve Indonesian student communities across Malaysia, united by shared roots.",
+      "Indonesian student communities across Malaysia, united by shared roots.",
     "collab.catIntlTitle": "International Collaboration",
     "collab.catIntlDesc":
       "Beyond Malaysia — joint programs, webinars, and exchanges with PPI branches worldwide.",
@@ -399,7 +399,7 @@ export const UI_STRINGS = {
     "home.widerCommunity": "Komunitas Lebih Luas",
     "home.networkTitle": "Bagian dari Jaringan PPI Malaysia",
     "home.networkDesc":
-      "PPI Monash adalah satu dari belasan komunitas pelajar Indonesia di Malaysia. Kami berkolaborasi, berbagi acara, dan saling mendukung sebagai bagian dari jaringan PPIM yang lebih luas.",
+      "PPI Monash adalah satu dari banyak komunitas pelajar Indonesia di Malaysia. Kami berkolaborasi, berbagi acara, dan saling mendukung sebagai bagian dari jaringan PPIM yang lebih luas.",
     "home.exploreNetwork": "Jelajahi seluruh jaringan",
 
     // Hero
@@ -568,13 +568,13 @@ export const UI_STRINGS = {
     "collab.label": "Kolaborasi",
     "collab.heroTitle": "Membangun Jembatan, Bersama",
     "collab.heroSubtitle":
-      "Dari KBRI Kuala Lumpur hingga PPI Jerman, dari klub-klub Monash hingga sesama cabang PPI di seluruh Malaysia — inilah kemitraan yang membuat komunitas kami semakin kuat.",
+      "Dari KBRI Kuala Lumpur hingga PPIM, dari klub-klub Monash hingga sesama cabang PPI di seluruh Malaysia — inilah kemitraan yang membuat komunitas kami semakin kuat.",
     "collab.catPartnersTitle": "Mitra & Sponsor",
     "collab.catPartnersDesc":
       "Institusi, sponsor, dan organisasi kampus yang memungkinkan kerja kami terwujud.",
     "collab.catNetworkTitle": "Jaringan PPI Malaysia",
     "collab.catNetworkDesc":
-      "Dua belas komunitas pelajar Indonesia di seluruh Malaysia, dipersatukan oleh akar yang sama.",
+      "Komunitas pelajar Indonesia di seluruh Malaysia, dipersatukan oleh akar yang sama.",
     "collab.catIntlTitle": "Kolaborasi Internasional",
     "collab.catIntlDesc":
       "Melampaui Malaysia — program bersama, webinar, dan pertukaran dengan cabang PPI di seluruh dunia.",

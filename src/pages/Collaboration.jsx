@@ -234,7 +234,6 @@ export default function Collaboration() {
     () => COLLABORATIONS.filter((c) => c.type === "International Collaboration"),
     []
   );
-  const ppiJerman = useMemo(() => getPartnerById(PARTNERS, "ppi-jerman"), []);
 
   return (
     <>
@@ -451,29 +450,6 @@ export default function Collaboration() {
               {t("collab.intlSubtitle")}
             </p>
           </FadeIn>
-
-          {/* Featured: PPI Jerman */}
-          {ppiJerman && (
-            <FadeIn delay={0.08}>
-              <div className="featured-partner-card">
-                <div className="featured-partner-badge">{t("collab.featuredPartner")}</div>
-                <h3 className="featured-partner-name">{ppiJerman.name}</h3>
-                <p className="featured-partner-desc">{tc(ppiJerman.description)}</p>
-                <div className="featured-partner-links">
-                  {ppiJerman.website && (
-                    <a href={ppiJerman.website} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                      {t("collab.visitWebsite")} &#8599;
-                    </a>
-                  )}
-                  {ppiJerman.socialUrl && (
-                    <a href={ppiJerman.socialUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                      {t("collab.instagram")} &#8599;
-                    </a>
-                  )}
-                </div>
-              </div>
-            </FadeIn>
-          )}
 
           {/* International collaboration list */}
           {intlCollabs.length > 0 && (
