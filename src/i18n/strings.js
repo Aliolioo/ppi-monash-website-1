@@ -314,9 +314,10 @@ export const UI_STRINGS = {
     "network.occasional": "Occasional",
     "network.noCollab": "No collab",
     "network.recentJoint": "Recent Joint Events",
+    "network.collaboratorsHeading": "Active PPI Collaborators",
     "network.missing": "Is your PPI community missing from this list?",
     "network.letUsKnow": "Let us know via the collaboration inquiry form",
-    "network.label": "Network",
+    "network.label": "Our Network",
     "network.title": "PPI Malaysia Network",
     "network.subtitle":
       "Indonesian student associations across Malaysia, united by shared culture and student spirit. Click any community to get in touch or learn more.",
@@ -662,9 +663,10 @@ export const UI_STRINGS = {
     "network.occasional": "Sesekali",
     "network.noCollab": "Belum ada",
     "network.recentJoint": "Acara Bersama Terkini",
+    "network.collaboratorsHeading": "Kolaborator PPI Aktif",
     "network.missing": "Komunitas PPI-mu belum ada di daftar ini?",
     "network.letUsKnow": "Beri tahu kami melalui formulir pertanyaan kolaborasi",
-    "network.label": "Jaringan",
+    "network.label": "Jaringan Kami",
     "network.title": "Jaringan PPI Malaysia",
     "network.subtitle":
       "Himpunan pelajar Indonesia di seluruh Malaysia, dipersatukan oleh budaya dan semangat kemahasiswaan yang sama. Klik komunitas mana pun untuk menghubungi atau mengenal lebih jauh.",

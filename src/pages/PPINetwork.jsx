@@ -2,22 +2,19 @@
 // PPI Malaysia Network page — /network
 // Full directory of PPI branches across Malaysian universities
 // ============================================================================
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { FadeIn } from "../components/FadeIn";
 import { Seo } from "../components/Seo";
 import { COLLABORATIONS, PPI_NETWORK, PARTNERS } from "../config/siteConfig";
-import { getNetworkByStatus, getPartnerById } from "../utils/collaboration";
+import { getPartnerById } from "../utils/collaboration";
 import { useLang } from "../i18n/LanguageContext";
-
-const STATUS_FILTERS = ["all", "active", "occasional"];
 
 function NetworkStatusBadge({ status }) {
   const { t } = useLang();
   const map = {
-    active:     { key: "network.active",   bg: "#DCFCE7", color: "#15803D" },
-    occasional: { key: "network.occasional", bg: "#FEF3C7", color: "#B45309" },
-    none:       { key: "network.noCollab", bg: "#F3F4F6", color: "#6B7280" },
+    active: { key: "network.active", bg: "#DCFCE7", color: "#15803D" },
+    none:   { key: "network.noCollab", bg: "#F3F4F6", color: "#6B7280" },
   };
   const cfg = map[status] || map.none;
   return (
@@ -44,12 +41,6 @@ function logoColor(id) {
 
 export default function PPINetwork() {
   const { t, tc, tcat } = useLang();
-  const [statusFilter, setStatusFilter] = useState("all");
-
-  const filtered = useMemo(
-    () => getNetworkByStatus(PPI_NETWORK, statusFilter),
-    [statusFilter]
-  );
 
   const jointEventCollabs = useMemo(
     () => COLLABORATIONS.filter((c) => c.type === "PPI Malaysia Joint Event"),
@@ -79,24 +70,19 @@ export default function PPINetwork() {
         </p>
       </FadeIn>
 
-      {/* Status filter pills */}
+      {/* Active collaborators heading */}
       <FadeIn delay={0.08}>
-        <div className="event-filters" style={{ marginBottom: 40 }}>
-          {STATUS_FILTERS.map((s) => (
-            <button
-              key={s}
-              className={`filter-btn ${statusFilter === s ? "active" : ""}`}
-              onClick={() => setStatusFilter(s)}
-            >
-              {t(`network.${s === "all" ? "all" : s}`)}
-            </button>
-          ))}
-        </div>
+        <h2
+          className="section-title"
+          style={{ fontSize: "1.6rem", marginTop: 40, marginBottom: 24 }}
+        >
+          {t("network.collaboratorsHeading")}
+        </h2>
       </FadeIn>
 
       {/* Network grid */}
       <div className="network-grid">
-        {filtered.map((n, i) => (
+        {PPI_NETWORK.map((n, i) => (
           <FadeIn key={n.id} delay={i * 0.04}>
             <div className="network-card">
               <div
