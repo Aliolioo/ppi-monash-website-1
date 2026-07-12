@@ -426,6 +426,7 @@ Try to open your account within your first two weeks. Some branches accept your 
 
 ## Indonesian and Familiar Flavours
 
+- **Rock Cafe** and the **SS15** food area in Subang Jaya are student favourites for Indonesian and familiar flavours — an easy outing when you want a taste of home
 - Several warung-style stalls around Sunway serve nasi padang and similar dishes — ask seniors for the current favourites, as these rotate
 - Indomie and other Indonesian instant staples are easy to find in most nearby supermarkets
 - PPI's weekly gatherings during Ramadhan and other events often feature home-cooked dishes from members
