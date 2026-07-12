@@ -22,8 +22,7 @@ export const LEADERSHIP_HISTORY = [
     achievements: [
       "Launched the new PPI Monash Malaysia website",
       "Organized Rantau Heist welcome event for new intakes",
-      "Hosted One World: Indonesia Hand in Hand sports competition",
-      "Opened Indonesian Night Market in collaboration with other student societies",
+      "Represented Indonesia at MUISS OneWorld 2026",
     ],
     notes: "Cabinet Eunoia focuses on building a warm, close-knit community — welfare, collaboration, and meaningful experiences at the heart of everything.",
   },
