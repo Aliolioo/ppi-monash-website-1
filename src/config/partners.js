@@ -66,6 +66,20 @@ export const PARTNERS = [
     partnershipSince: "2023",
     relatedEventIds: ["one-world-2026"],
   },
+  {
+    id: "ppi-hong-kong",
+    name: "PPI Hong Kong",
+    logo: null,
+    category: "Student Organization",
+    website: null,
+    socialUrl: null,
+    description: "Perhimpunan Pelajar Indonesia Hong Kong — a fellow Indonesian student association abroad. Part of the global PPI family that PPI Monash connects with beyond Malaysia.",
+    active: true,
+    international: true,
+    displayOrder: 20,
+    partnershipSince: null,
+    relatedEventIds: [],
+  },
   // Past / inactive partners — shown in the archive section on /collaboration
   {
     id: "sunway-pyramid",

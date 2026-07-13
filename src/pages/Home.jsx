@@ -37,7 +37,8 @@ const homeGuideIds = ["before-arrival-checklist", "survive-first-week", "join-pp
 const homeGuides = homeGuideIds.map((id) => findGuideById(STUDENT_GUIDES, id)).filter(Boolean);
 
 // Partner marquee — duplicate array for seamless CSS loop.
-const _activePartners = getActivePartners(PARTNERS);
+// International partners live on /collaboration only, so they're excluded here.
+const _activePartners = getActivePartners(PARTNERS).filter((p) => !p.international);
 const marqueeItems = [..._activePartners, ..._activePartners];
 
 // Network teaser — first 5 active branches.

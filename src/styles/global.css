@@ -125,20 +125,32 @@ body {
 .hamburger.open span:nth-child(3) { top: 19px; transform: rotate(-45deg); }
 
 /* Mobile menu */
+/* 9 nav items have to fit between the top bar and the bottom of the screen.
+   Sized to fit without scrolling on a normal phone; scrolls if it can't. */
 .mobile-menu {
   display: none; position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
   background: rgba(255, 248, 240, 0.97);
   backdrop-filter: blur(32px);
-  z-index: 99; padding: 32px 24px;
-  flex-direction: column; align-items: center; gap: 6px;
+  z-index: 99;
+  padding: 20px 24px calc(24px + env(safe-area-inset-bottom, 0px));
+  flex-direction: column; align-items: center; gap: 4px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 .mobile-menu.show { display: flex; }
 .mobile-menu a {
-  text-decoration: none; font-size: 1.4rem; font-weight: 700;
+  text-decoration: none; font-size: 1.15rem; font-weight: 700;
   font-family: var(--font-display);
-  color: var(--charcoal); padding: 16px 32px; border-radius: var(--radius);
+  color: var(--charcoal); padding: 12px 24px; border-radius: var(--radius);
   transition: var(--transition); width: 100%; text-align: center;
+  flex-shrink: 0;
   opacity: 0; animation: slideIn 0.4s var(--ease) forwards;
+}
+/* Landscape phones and other short viewports */
+@media (max-height: 640px) {
+  .mobile-menu { padding-top: 12px; gap: 2px; }
+  .mobile-menu a { font-size: 1rem; padding: 9px 20px; }
 }
 @keyframes slideIn {
   from { opacity: 0; transform: translateY(12px); }

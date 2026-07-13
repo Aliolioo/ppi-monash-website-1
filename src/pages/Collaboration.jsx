@@ -205,7 +205,11 @@ export default function Collaboration() {
   const [showArchive, setShowArchive]        = useState(false);
   const [collabType, setCollabType]          = useState("All");
 
-  const activePartners   = useMemo(() => getActivePartners(PARTNERS), []);
+  // International partners are spotlighted in their own section, not the local grid.
+  const activePartners   = useMemo(
+    () => getActivePartners(PARTNERS).filter((p) => !p.international),
+    []
+  );
   const inactivePartners = useMemo(() => getInactivePartners(PARTNERS), []);
   const partnerCategories = useMemo(() => getPartnerCategories(PARTNERS), []);
 
@@ -234,6 +238,7 @@ export default function Collaboration() {
     () => COLLABORATIONS.filter((c) => c.type === "International Collaboration"),
     []
   );
+  const ppiHongKong = useMemo(() => getPartnerById(PARTNERS, "ppi-hong-kong"), []);
 
   return (
     <>
@@ -450,6 +455,29 @@ export default function Collaboration() {
               {t("collab.intlSubtitle")}
             </p>
           </FadeIn>
+
+          {/* Featured: PPI Hong Kong */}
+          {ppiHongKong && (
+            <FadeIn delay={0.08}>
+              <div className="featured-partner-card">
+                <div className="featured-partner-badge">{t("collab.featuredPartner")}</div>
+                <h3 className="featured-partner-name">{ppiHongKong.name}</h3>
+                <p className="featured-partner-desc">{tc(ppiHongKong.description)}</p>
+                <div className="featured-partner-links">
+                  {ppiHongKong.website && (
+                    <a href={ppiHongKong.website} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                      {t("collab.visitWebsite")} &#8599;
+                    </a>
+                  )}
+                  {ppiHongKong.socialUrl && (
+                    <a href={ppiHongKong.socialUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                      {t("collab.instagram")} &#8599;
+                    </a>
+                  )}
+                </div>
+              </div>
+            </FadeIn>
+          )}
 
           {/* International collaboration list */}
           {intlCollabs.length > 0 && (
