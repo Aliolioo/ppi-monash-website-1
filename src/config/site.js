@@ -80,20 +80,28 @@ export const STATS = [
 // `link` may be an internal route (e.g. "/events/...") or null for plain text.
 export const ANNOUNCEMENTS = [
   {
-    id: "night-market-reg",
+    id: "mini-welpar-2026",
     text: {
-      en: "Indonesian Night Market registration closes 15 Aug — sign up now!",
-      id: "Pendaftaran Indonesian Night Market ditutup 15 Agu — daftar sekarang!",
+      en: "Mini Welpar opens Semester 2 on 8 Aug — details to be announced.",
+      id: "Mini Welpar membuka Semester 2 pada 8 Agu — detail akan diumumkan.",
     },
-    link: "/events/indonesian-night-market-2026",
+    link: "/events/mini-welpar-2026",
   },
   {
-    id: "ppi-talks",
+    id: "independence-day-2026",
     text: {
-      en: "PPI Talks: Mental Health & Belonging — 5 Aug, registration opening soon.",
-      id: "PPI Talks: Kesehatan Mental & Rasa Memiliki — 5 Agu, pendaftaran segera dibuka.",
+      en: "Independence Day — 15 Aug. Save the date!",
+      id: "Independence Day — 15 Agu. Catat tanggalnya!",
     },
-    link: "/events/ppi-talks-mental-health-2026",
+    link: "/events/independence-day-2026",
+  },
+  {
+    id: "independence-day-charity-2026",
+    text: {
+      en: "Independence Day Charity Event runs 17–19 Aug — details to be announced.",
+      id: "Independence Day Charity Event digelar 17–19 Agu — detail akan diumumkan.",
+    },
+    link: "/events/independence-day-charity-2026",
   },
   {
     id: "join-whatsapp",
