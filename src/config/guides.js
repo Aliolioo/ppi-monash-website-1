@@ -468,7 +468,7 @@ Try to open your account within your first two weeks. Some branches accept your 
 
 ## Getting Involved Beyond Events
 
-PPI runs seven departments, each looking for members at different points in the year:
+PPI Monash Malaysia runs 7 departments, each looking for members at different points in the year:
 
 - **Executive** — leadership and overall coordination
 - **Events** — planning and running PPI's events calendar
