@@ -203,6 +203,8 @@ The iKad is issued by Malaysian immigration and confirms your student pass statu
 - Some bank and telco registrations that specifically ask for proof of student pass
 - **Re-entering Malaysia** if you travel home during semester breaks
 
+**The iKad does not replace your passport.** When you re-enter Malaysia you still need to bring your passport with the valid student pass endorsement in it — the iKad is only a supporting card, and immigration will not let you through on the iKad alone.
+
 ## Getting Them Sorted
 
 Steps that worked for most students:
