@@ -19,7 +19,7 @@ function getInitials(name) {
 }
 
 function MemberAvatar({ name, photo }) {
-  const PHOTO_BASE = "./assets/photos/";
+  const PHOTO_BASE = `${import.meta.env.BASE_URL}assets/photos/`;
 
   if (!photo) {
     return <div className="member-avatar">{getInitials(name)}</div>;
