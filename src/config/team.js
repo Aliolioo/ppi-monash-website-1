@@ -72,18 +72,18 @@ export const COMMITTEE = [
   {
     dept: "Publicity (Design)",
     members: [
-      { name: "Anabela Fitriani Irsan", role: { en: "Head of Department", id: "Kepala Divisi" }, photo: null },
-      { name: "Nabila Dealova Elang Mulia", role: { en: "Subcommittee", id: "Subkomite" }, photo: null },
+      { name: "Anabela Fitriani Irsan", role: { en: "Head of Department", id: "Kepala Divisi" }, photo: "publicity-design/anabela-fitriani-irsan.jpg" },
+      { name: "Nabila Dealova Elang Mulia", role: { en: "Subcommittee", id: "Subkomite" }, photo: "publicity-design/nabila-dealova-elang-mulia.jpeg" },
     ],
   },
   {
     dept: "Publicity (Documentation)",
     members: [
-      { name: "Collin Japit", role: { en: "Head of Department", id: "Kepala Divisi" }, photo: null },
-      { name: "Harry Setiawan", role: { en: "Subcommittee", id: "Subkomite" }, photo: null },
-      { name: "Chellyne Grissela", role: { en: "Subcommittee", id: "Subkomite" }, photo: null },
-      { name: "Annisa Rhiana Syahira", role: { en: "Subcommittee", id: "Subkomite" }, photo: null },
-      { name: "Clara Graciella Hadiman", role: { en: "Subcommittee", id: "Subkomite" }, photo: null },
+      { name: "Collin Japit", role: { en: "Head of Department", id: "Kepala Divisi" }, photo: "publicity-documentation/collin-japit.jpg" },
+      { name: "Harry Setiawan", role: { en: "Subcommittee", id: "Subkomite" }, photo: "publicity-documentation/harry-setiawan.jpg" },
+      { name: "Chellyne Grissela", role: { en: "Subcommittee", id: "Subkomite" }, photo: "publicity-documentation/chellyne-grissela_.jpg" },
+      { name: "Annisa Rhiana Syahira", role: { en: "Subcommittee", id: "Subkomite" }, photo: "publicity-documentation/annisa-syahira.jpg" },
+      { name: "Clara Graciella Hadiman", role: { en: "Subcommittee", id: "Subkomite" }, photo: "publicity-documentation/clara-graciella.jpg" },
     ],
   },
   {
