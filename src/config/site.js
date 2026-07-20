@@ -46,7 +46,7 @@ export const SOCIAL_LINKS = {
   tiktok: "https://www.tiktok.com/@ppi.eunoia/",
   youtube: "https://www.youtube.com/@ppimonashmalaysia9894",
   spotify: "https://open.spotify.com/show/0ygQcEUwrGbEelJMc2fhpp",
-  whatsapp: "https://chat.whatsapp.com/B8gnqaNtpdiD5M69XW02Mj",
+  whatsapp: "https://chat.whatsapp.com/Jow9rWRT4AJD2l47dulEA4",
   email: "ppimonashmalaysia@gmail.com",
   website: "https://ppimonashmalaysia.com/",
 };
