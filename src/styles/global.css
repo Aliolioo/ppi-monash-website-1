@@ -870,7 +870,7 @@ body {
 .external-notice a:hover { text-decoration: underline; }
 
 .article-detail-body {
-  max-width: 680px; font-size: 1rem; color: var(--charcoal); line-height: 1.75;
+  max-width: none; font-size: 1rem; color: var(--charcoal); line-height: 1.75; margin: 0 auto;
 }
 .article-detail-body p { margin-bottom: 24px; }
 .article-detail-body h2 {
