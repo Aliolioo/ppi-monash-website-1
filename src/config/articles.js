@@ -53,26 +53,24 @@ export const ARTICLES = [
       en: "MUISS OneWorld has once again delivered a wonderful event with students representing their country in four different sports!",
       id: "MUISS OneWorld kembali menghadirkan acara yang luar biasa dengan para mahasiswa yang mewakili negaranya di empat cabang olahraga berbeda!",
     },
-    body: `MUISS OneWorld has once again delivered a wonderful event with students representing their country in four different sports. PPI Monash Malaysia fielded contingents across futsal, badminton, basketball, and tug-of-war, bringing together students from over a dozen nationalities for a day of friendly competition.
+    body: `In accordance with the common tradition. **MUISS OneWorld** has once again delivered us a wonderful event that celebrates all the different international cultures in Monash University! Unlike previous years that were mostly about bazaars and cultural showcases, this year added more competitive spirit through an **international sport tournament!** Students representing each country participated in **four different sport categories: futsal, basketball, dodge ball, and badminton.** This created an energetic atmosphere to encourage teamwork and friendly competition amongst international Monash students!
 
-## A Day of Firsts
+During its opening day, PPI committee members marched through the pathways while carrying Indonesian flags, cheering and chanting a hymn to motivate those who’re participating in the tournament! Chairs were quickly filled with anticipating audiences, eager to watch a battle unfold, and amongst them, our committee members were there wearing our signature jersey and supporting fellow Indonesians who represent our country throughout the tournament! Yet, despite the applause and encouragement to beat the other countries, we didn’t forget that this event is ultimately about **sportsmanship and international camaraderie.** Thus, the Indonesians played **not just for the sake of beating their opponents,** but to **learn more about them through their playstyle** as well. 
 
-For many of our newer members, this was their first time competing under the Indonesian flag outside of their home country. The energy on the sidelines was just as competitive as the energy on the court, with chants and drumbeats keeping spirits high through every match.
+One of the highlights of the event was one of the dodgeball matches, specifically **Indonesia against Maldives and Brunei.** All players displayed quick reflexes and coordination that made the match look tense. Spectators were cheering and wondering which team would come out on top. Yet, the Indonesians showed a strong level of team communication that felt more cohesive as the match went on. It’s a brilliant spectacle when one of the players told the others to stand back to ensure they didn’t get hit by their opponents, and the player shot the ball straight into one of the Bruneians. The crowd erupted into cheers, especially the Indonesia supporters, who cheered the loudest. The match remained lively for most of the run, and in the end the Indonesians beat the Bruneians 2-0.
 
-Highlights from the day included:
+Another notable moment was in the badminton category, where both male and female players displayed agile and flexible skills in the game. There were many times where Indonesian players were able to get the first point of the game, often catching the opponent off guard. In fact, we have so many talented players this year, that by the end of the tournament, Indonesia managed to secure a **podium third place win in Badminton men singles!** It became one of the staples of the event, when the MC’s on the final day announced us achieving a spot on the podium. The PPI committee felt so proud of these players’ efforts to represent Indonesia in the best way
 
-- A nail-biting futsal semifinal that went to penalties
-- A badminton doubles pair who hadn't played together before the tournament
-- A tug-of-war final that PPI Monash narrowly lost by inches
+Unfortunately, we did experience some losses, as just before we could make it to the podium in the Basketball category, the team lost in the third place playoffs to Japan. Nevertheless, the fact that Indonesia managed to get so close to the podium is still impressive. We may have lost, but what matters is that the team did their best to proudly represent Indonesia.
 
-**The result?** A third-place overall finish across all sports — our best showing yet. More importantly, the event reinforced something we say every year: *competition is just an excuse to build community.*
+Overall, this event based around sportsmanship and international rivalries was another success from MUISS. PPI is glad to have participated in this event and represented Indonesia once more with our hardworking and talented players. Here’s to hoping the next MUISS event will be another great one!
 
-We're already looking forward to representing PPI Monash again next year, and recruiting a few more badminton players in the meantime.`,
-    coverImage: null,
-    externalUrl: "https://ppimonashmalaysia.com/articles/one-world-2026/",
-    featured: true,
-    relatedArticles: ["study-tips-2026", "banking-101-malaysia-2026"],
-  },
+As we wait for that, **please remember to keep in touch with updates from PPI,** as new content will appear every so often. **We even recently hosted a new podcast episode, so please do watch that if you haven’t already!** Until the next new content, we hope you will **continue to support PPI and stay updated on the latest news!**`,
+  coverImage: null,
+  externalUrl: "https://ppimonashmalaysia.com/articles/one-world-2026/",
+  featured: true,
+  relatedArticles: ["study-tips-2026", "banking-101-malaysia-2026"],
+},
   {
     id: "study-tips-2026",
     title: { en: "Study Tips from PPI", id: "Tips Belajar dari PPI" },
@@ -85,23 +83,24 @@ We're already looking forward to representing PPI Monash again next year, and re
       en: "PPI is here to help by sharing five tips on how to balance your academics and social life as an international student.",
       id: "PPI hadir untuk membantu dengan berbagi lima tips menyeimbangkan akademik dan kehidupan sosial sebagai mahasiswa internasional.",
     },
-    body: `Balancing academics and social life as an international student is no small feat — especially in your first semester away from home. We asked a few senior students what actually worked for them, and compiled their answers below.
+    body: `Two months into the semester, many are **busy with their assignments** while **barely having enough time to socialize and spend time with other people.** Students still struggle to maintain a balanced lifestyle, so if you’re one of these students, **don’t worry!** Even our members in PPI are undergoing the same struggles, which is why we’re here to help by sharing you **five tips on** how to balance your academics & social life! These tips are simple and can be applied to almost any student, so we hope you can **make full use of these tips in the future!**
 
-## 1. Build a Loose Routine, Not a Rigid One
+1. **Time Management**
+   We can’t stress enough how important it is to plan ahead on how you’ll organize your schedule, from study time to social events. **Make a weekly schedule that allocates your tutorial classes, seminars, and social activities. Don’t forget to prioritize your academics and ensure that you have dedicated time to finish them.** This helps avert sudden changes and reduces stress significantly, allowing you to have time for both studies and social life.
 
-Strict hour-by-hour schedules tend to fall apart the moment something unexpected happens (and something always does). Instead, block out *rough* zones of your day — mornings for lectures, afternoons for revision, evenings for whatever you need them to be.
+2. **Non-Exclusive Study & Social life**
+   Your academics and social life don’t have to be mutually exclusive. **Plan study groups together** or **attend workshops and conferences** to not only **grow academically,** but also **deepen your connection with friends.** You can even form new bonds in these social events, you never know! Embracing networking can not only **strengthen friendships,** but also **improve your experience** and open pathways to opportunities.
 
-## 2. Use the Library Differently Each Week
+3. **Efficiency**
+   While it’s important to allocate your time wisely, it’s equally important to **make full use of your time. Find work habits that can guarantee the most efficiency during your work hours and eliminate distractions so they don’t take away efficiency.** When you complete tasks productively, you have **more time to yourself** or to **spend time with friends!**
 
-Sitting in the same seat every day gets old fast. Rotate between the quiet floors, the group discussion rooms, and the campus cafés depending on what kind of work you're doing.
+4. **Learn to Say No**
+   We speak for everyone when we say it's hard to refuse offers to hang out with friends, but that’s why **establishing a boundary** is important! Learn to **politely decline invitations for activities in favor of more important ones like an upcoming test or assignment deadlines.** Besides, there is always another chance for future hangout events!
 
-Some quick wins our seniors swore by:
+5. **Take Care of Yourself**
+   Balancing studies and social life is not easy, hence it’s important to **take care of your physical and mental health. Exercise regularly, spend some time with your hobbies, and ensure you get enough sleep.** A healthy mind and body helps both your academic success and social interactions.
 
-- Reviewing lecture slides within 24 hours, not the night before the exam
-- Joining at least one study group, even if you're an introvert
-- Setting a hard stop time for studying each night
-
-**Most importantly**, give yourself permission to rest. Burnout doesn't make you a better student — it just makes everything harder. PPI's Welfare department runs regular check-ins if you ever need someone to talk to.`,
+In conclusion, balancing your studies and community life can be challenging and requires practice. However, it’s incredibly important and rewarding so you can **make the most of your time in university.** Remember to frequently assess your progress: Are you balancing your academic pursuits and social life harmoniously or are there any tips or strategies you can implement to improve your university life? It may be tough at first, but **take things slow** and **embrace the journey.** We hope these tips will help you and please stay tuned for upcoming news from us!`,
     coverImage: null,
     externalUrl: "https://ppimonashmalaysia.com/articles/study-tips-2026/",
     featured: true,
@@ -119,23 +118,109 @@ Some quick wins our seniors swore by:
       en: "Navigating the holy month as an Indonesian student abroad — finding community, iftar gatherings, and keeping traditions alive.",
       id: "Menjalani bulan suci sebagai mahasiswa Indonesia di luar negeri — menemukan komunitas, berbuka bersama, dan menjaga tradisi tetap hidup.",
     },
-    body: `Spending Ramadhan away from family for the first time can feel strange. No mother cooking in the kitchen before dawn, no familiar mosque down the street, no sound of takbir drifting through the neighbourhood. But over the past few years, PPI Monash has tried to recreate a little bit of that warmth here in Sunway.
+    body: `With Ramadhan underway, many new Muslim students struggle to celebrate the festivity while adjusting to a new environment and being away from their family for the first time. If you’re missing home, **don’t worry!** PPI is here to recommend several ways to ensure your first Ramadhan abroad is comfortable:
 
-## Communal Iftars
+1. **Connect with a Muslim community**
+   The biggest change for students is the missing community and common goal families provide during fasting. **Try to find friends or Muslim student groups who are fasting as well!** That way going through fasting feels more motivating and easier with people helping each other out! Luckily, Monash has their very own Islamic community! Find out more [here](https://www.monash.edu/).
 
-Every week during Ramadhan, members gather for a potluck-style iftar near campus. Everyone brings a dish — usually whatever reminds them most of home — and for a couple of hours, the room genuinely *smells* like Indonesia.
+2. **Maintain a Good Ramadan Schedule**
+   Finding a Ramadan routine, especially without your family, is a tough task. It’s even tougher when you have to balance your class schedule and you feel like you’re not doing a good job growing in Allah. **That’s why it’s important to plan beforehand:** what time you will wake up for Suhoor, when Iftar begins, and even when you sleep. It’s best to get at least 8 hours of sleep each day to get enough energy for fasting! It’s important to not let yourself get too exhausted during the day to make fasting easier.
 
-A few things that helped students we spoke to feel more at home this Ramadhan:
+3. **Focus on Mental Health**
+   Oftentimes, we focus so heavily on our routines and tasks that we forget to take things slow. Adapting to a new environment can be difficult for anyone, especially for international Muslims who’ve just moved into university. In PPI, we always remind our members to not put heavy pressure on themselves with how many tasks they have to manage. **That goes the same for you new students too!** Even while balancing the Ramadhan lifestyle and new adjustments, **remember to always check your mental health and talk to someone if you face any struggles!**
 
-- Joining the weekly iftar gatherings, even just to sit and chat
-- Finding a sahur buddy so waking up before dawn doesn't feel so lonely
-- Calling family during iftar time back home, even if the time zones don't line up perfectly
-
-**Ramadhan abroad is different, not lesser.** It just takes a bit more intention to build the community that used to come naturally back home — and that's exactly what PPI tries to help with every year.`,
+Hopefully these tips will help you get through the month of Ramadhan while you’re away from your parents and give you opportunities to connect with new friends and deepen your appreciation for the festivity! PPI wishes you a wonderful Ramadhan and an enjoyable first semester in Monash University!`,
     coverImage: null,
     externalUrl: "https://ppimonashmalaysia.com/articles/",
     featured: false,
     relatedArticles: [],
+  },{
+    id: "tips-and-tricks-cultural-events-2025",
+    title: "Tips & Tricks for Making the Most of Cultural Events",
+    date: "2025-05-29",
+    dateDisplay: "29 May 2025",
+    author: "PPI Monash Editorial",
+    category: "Tips & Tricks",
+    tags: ["university-life", "international-students", "tips", "monash"],
+    excerpt: {
+      en: "Starting university in a new country can be both exciting and overwhelming. Monash University Malaysia warmly welcomes international students each semester, offering academic excellence and a vibrant multicultural environment. No matter where you're from, this is the start of an unforgettable journey. Here are some key tips to help you adapt smoothly to university life.",
+      id: "Memulai kehidupan universitas di negara baru bisa menjadi hal yang menyenangkan sekaligus menegangkan. Monash University Malaysia menyambut hangat para mahasiswa internasional setiap semester dengan menawarkan keunggulan akademik dan lingkungan multikultural yang dinamis. Dari mana pun Anda berasal, ini adalah awal dari perjalanan yang tak terlupakan. Berikut adalah beberapa tips utama untuk membantu Anda beradaptasi dengan lancar dalam kehidupan kampus.",
+    },
+    body: `Stepping into university life is both exciting and overwhelming, especially when you're starting in a new country. Monash University Malaysia proudly welcomes its vibrant international student community each semester, offering not just academic excellence, but also a multicultural environment for you to grow, connect, and thrive. Whether you're from across the region or a country far away, your journey here marks the beginning of an unforgettable chapter. Here are several important things that can help create a smoother adaptation process into your university life.
+
+To kickstart your university experience, make sure you’ve sorted out the essentials:
+
+*
+- **Student ID and iKad:** Your Monash ID gives you access to campus facilities, events, and more. If you're an international student, iKad serves as your official identity card while studying in Malaysia. To get more information regarding these two, drop by the Student Hub to ask questions!
+- **Timetable and Units:** Familiarize yourself with Web Enrollment System (WES) and Allocate+ so you can allocate your subjects early. This will help you secure your desired class slots faster and easier!
+- **Transport:** Sunway City offers a free bus shuttle service that runs around Sunway, including to and from our campus. You can download the Sunway Super App for the bus route and operating hours. The BRT is also available and more reliable. For cheaper fares, you can apply for a student concession card that will get you 50% off for all public transportation in Malaysia. Check myRapid Concession Form for more information.
+- **Banking & Finance:** Set up a Maybank account to make daily transactions easier! Remember that you need to submit your passport to campus by the time you arrive in Malaysia to get your student visa sticker and it takes a month for it to be returned. You can only register for a Maybank account after your passport has been returned to you with a student visa, so in the meantime, ensure you have sufficient cash! For more details, visit the Maybank office on campus, located right next to Subway.
+- **Health Insurance & Support:** International students are automatically enrolled in health cover. Get to know your coverage and the campus health services.
+- **Things to Have Around:** Malaysia’s weather can be a bit harsh, ranging from scorching sun to thunderstorms—sometimes both in one day! Always have an umbrella, a water tumbler, and a portable fan (if needed) with you!
+
+Transitioning to university, especially in a different culture, takes time and effort. Here are some tips to make things less stressful:
+
+- **Join Student Clubs:** Monash University Malaysia has a wide range of clubs, including student associations of different countries. Join events from your respective country’s student association to feel less homesick!
+- **Attend Orientation Events:** Orientation week is crucial for new students as it provides valuable information that can help you understand how things work in Monash University Malaysia. This is also a perfect opportunity to make new friends! Remember, everyone else is just like you—new, curious, and unfamiliar. So don’t be afraid to reach out and say hi to someone sitting or standing next to you!
+- **Time Management:** Here in Monash, most subjects require a lot of independent learning including pre-class reading, quizzes, and online lectures. Make sure you plan and organize your studies so you can balance it with a good social life.
+- **Ask for Help:** If you’re feeling homesick, overwhelmed, or other psychological distress, keep in mind that Monash offers free counseling services for all students. Don’t hesitate to reach out, because here in Monash, you are never alone.
+
+Visit this link for more information: [Counselling & Wellness – Monash University Malaysia](https://www.monash.edu.my/student-services/support-services/counselling-and-wellness)
+
+University is not just about grades, it’s about growth. Make time for new friendships, explore Malaysian culture, and stay curious! Monash University Malaysia is more than just a campus, it’s a vibrant, global community where you belong. Welcome aboard, and here’s to a journey filled with endless possibilities!`,
+    coverImage: null,
+    externalUrl: null,
+    featured: false,
+    relatedArticles: ["study-playlist-2025"],
+  },
+  {
+    id: "study-playlist-2025",
+    title: "Study Playlist",
+    date: "2025-06-14",
+    dateDisplay: "14 June 2025",
+    author: "PPI Eunoia",
+    category: "Tips & Tricks",
+    tags: ["music", "study-tips", "playlist", "productivity"],
+    excerpt: {
+      en: "As we’re entering the end of the semester, workloads are piling up. Whether you’re trying to finish an assignment, or catch up on your pre-recorded lectures, staying productive remains a challenge many of us face. However, the right music can make all the difference. PPI Eunoia has curated a playlist that creates a conducive studying environment to help you stay on track with your academics.",
+      id: "Saat kita memasuki akhir semester, beban tugas mulai menumpuk. Baik Anda mencoba menyelesaikan tugas atau mengejar ketertinggalan rekaman kuliah, tetap produktif tetap menjadi tantangan bagi banyak dari kita. Namun, musik yang tepat bisa membuat perbedaan besar. PPI Eunoia telah mengkurasi daftar putar yang menciptakan suasana belajar yang kondusif untuk membantu Anda tetap fokus pada akademis.",
+    },
+    body: `As we’re entering the end of the semester, workloads are piling up. Whether you’re trying to finish an assignment, or catch up on your pre-recorded lectures, staying productive remains a challenge many of us face. However, the right music can make all the difference. PPI Eunoia has curated a playlist that creates a conducive studying environment to help you stay on track with your academics. Take a look at some of the standout tracks that provide the perfect company for studying:
+
+    Listen to the full playlist here: [PPI Eunoia's Study Playlist on Spotify](https://open.spotify.com/playlist/47qhcaT6xuXXdiGFST63LX?si=Ot7lqffyRTK_wOyQtaar-Q)
+
+1. **Shouldn’t Matter but It Does – John Mayer**
+   The song combines gentle acoustic guitar tunes with John Mayer’s warm and soothing vocals that create a calming atmosphere.
+
+2. **Chilly – NIKI**
+   This song’s R&B, Lo-fi, and Jazz instrumentals are layered with Niki’s gentle vocals, which makes it a good company for your study session.
+
+3. **Kiss of Life – Sade**
+   The gentle sound of piano and trumpet acoustics, paired with a steady rhythm and soft vocals will help you focus quickly.
+
+4. **Je te laisserai des mots – Patrick Watson**
+   This timeless classical piece is known for its gentle, flowing melodies that soothe the mind and provide a serene environment for deep focus.
+
+5. **Nocturne Op. 9 No. 2 – Frédéric Chopin**
+   A delicate piano composition without lyrics that creates a peaceful atmosphere, ideal for a more focused study session.
+
+6. **Cardigan – Taylor Swift**
+   This song is a soft, melancholic track with gentle piano, airy vocals, and a dreamy folk-inspired production.
+
+7. **Superposition – Daniel Caesar**
+   This song is a mellow track with soft guitar, smooth vocals, and a gentle rhythm that creates a sense of warmth and tranquility.
+
+8. **Say – Keshi**
+   A catchy upbeat tune with soft vocals that can help maintain a positive mood while being productive.
+
+9. **Sherbet Land – Mario Kart Theme Song**
+   This playful theme song can refresh your energy and hype you up, especially when you’re rushing to finish your assignments at the last minute
+
+Each of these songs will create the right ambience for a productive study session. From John Mayer to Lana Del Rey, this playlist caters to various music preferences, all while keeping you sharply focused. Plug in your earphones, press play, and let the music do the magic.`,
+    coverImage: null,
+    externalUrl: null,
+    featured: false,
+    relatedArticles: ["tips-and-tricks-cultural-events-2025"],
   },
   {
     id: "banking-101-malaysia-2026",
