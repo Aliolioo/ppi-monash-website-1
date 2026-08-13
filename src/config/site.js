@@ -80,14 +80,6 @@ export const STATS = [
 // `link` may be an internal route (e.g. "/events/...") or null for plain text.
 export const ANNOUNCEMENTS = [
   {
-    id: "mini-welpar-2026",
-    text: {
-      en: "Mini Welpar opens Semester 2 on 8 Aug — details to be announced.",
-      id: "Mini Welpar membuka Semester 2 pada 8 Agu — detail akan diumumkan.",
-    },
-    link: "/events/mini-welpar-2026",
-  },
-  {
     id: "independence-day-2026",
     text: {
       en: "Independence Day — 15 Aug. Save the date!",
