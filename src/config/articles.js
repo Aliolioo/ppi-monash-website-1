@@ -393,6 +393,33 @@ A few crowd favourites from the night:
     featured: false,
     relatedArticles: [],
   },
+  
+  {
+    id: "“Kumpul Yuk!”: Sambutan Hangat untuk Para Siswa Baru Kami",
+    title: "“Kumpul Yuk!”: A Warm Welcome to Our New Intakes",
+    date: "2026-08-21",
+    dateDisplay: "20 Aug 2026",
+    author: "Events",
+    category: "Event Recap",
+    tags: [""],
+    excerpt:
+      "Just last week, PPI held an engaging event to welcome all Monash Indonesian students old and new to the new semester: a welcome party filled with games and challenges that encourage students to bond and enjoy themselves!",
+    body: `Just last week, PPI held an engaging event to welcome all Monash Indonesian students old and new to the new semester: a welcome party filled with games and challenges that encourage students to bond and enjoy themselves! This semester, the theme is retro, with old-fashioned decorations and simple games. Although this party isn’t as flashy compared to our last events, the participants are still eager to compete in the games!
+
+There are five games throughout the event. The first game, Song Association, had people try and guess songs containing a certain word spoken by the MC’s. There were times where the participants raised their hands even before the word was said and some even faked a song just to score the team a point! If the first game wasn’t competitive already, the second game, “Tebak kata” has participants try to guess a combination of letters and symbols that represent a word or phrase. Members of each team were thinking more thoughtfully for this one, but they started pointing fingers towards their teammates when they guessed the word. Overall, the games helped bring out the participant’s competitiveness to continue on with the games!
+
+The next two games required more manpower than the last. The third game, Team Maze has players’ wrists being attached to a rope that connects to a marker. Their goal is to move the marker through a printed maze without hitting the walls, or they have to start from the beginning! Some teams managed to go through the maze first try, while others constantly hit walls and even made their own path through them! 
+
+Afterwards, teams were escorted out into the fields where they’ll compete in Tunnel Vision. One teammate with a straw must traverse through a maze and not get hit by chairs that are placed randomly to place the straw in a bottle. However, they’re vision is covered and their teammates have to tell them which way to go without getting overpowered by the opposing team’s voice. Many players were screaming at the top of their lungs just to get their team to reach the end without fail! But many blindfolded teammates ended up getting confused, some even listened to the opposing team’s voice, which ended in them hitting the chairs and returning to the start!
+
+After a break from the four games, the final game began. Newspaper Towers has all teams try and build the tallest tower out of newspaper and cardboard to test their teamwork. Things get creative as the participants use clever ways to build up the tower, from curling the newspaper into thin strips to using given cardboard to ensure the tower’s steady. Some even turned the newspapers into fans to stabilize the tower. But the most unique one is the team using full cardboard to ensure stability! Every team has a different tower, showing everyone’s creativity by the end of it.
+
+Although some teams won over others, in the end PPI created an event that caters to all Indonesian students. Everyone enjoyed their time and PPI is glad to have created another special time for its community.`,
+    coverImage: null,
+    externalUrl: null,
+    featured: false,
+    relatedArticles: [],
+  },
 
   // ──────────────────────────────────────────────────────────────────────────
   // PLACEHOLDER / TEMPLATE — for migrating an article from the old WordPress
