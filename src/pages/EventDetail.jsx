@@ -53,7 +53,14 @@ export default function EventDetail() {
       <FadeIn delay={0.05}>
         <div className="event-detail-header">
           <div className="event-poster">
-            {event.poster ? <img src={event.poster} alt={tc(event.title)} /> : <span>🎉</span>}
+            {event.poster ? (
+              <img 
+                src={event.poster.startsWith("/") ? `${import.meta.env.BASE_URL}${event.poster.slice(1)}` : event.poster} 
+                alt={tc(event.title)} 
+              />
+            ) : (
+              <span>🎉</span>
+            )}
           </div>
           <div className="event-detail-info">
             <StatusBadge status={event.status} />

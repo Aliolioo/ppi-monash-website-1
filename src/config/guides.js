@@ -224,8 +224,8 @@ Steps that worked for most students:
     lastUpdated: "2026-05-01",
     disclaimer: "Bank policies and requirements may change. Always confirm with the bank before visiting.",
     importantLinks: [
-      { label: "Maybank International Student Info", url: "https://www.maybank2u.com.my/student-accounts" },
-      { label: "CIMB Student Account", url: "https://www.cimb.com.my/student-account" },
+      { label: "Maybank International Student Info", url: "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/accounts/current/personal_current_account.page" },
+      { label: "CIMB Student Account", url: "https://www.cimb.com.my/en/personal/day-to-day-banking/accounts/other-information/documents-for-identity-verification.html" },
     ],
     relatedFaqIds: ["bank-account-documents", "bank-account-timing"],
     relatedGuideIds: ["cost-of-living", "documents-you-need"],
@@ -304,8 +304,8 @@ Try to open your account within your first two weeks. Some branches accept your 
     lastUpdated: "2026-04-15",
     disclaimer: "Rental prices and availability change quickly between intakes — always verify current listings directly with the agent or landlord.",
     importantLinks: [
-      { label: "Nadayu28 Residences", url: "https://www.nadayu28.com.my" },
-      { label: "PropertyGuru Sunway Listings", url: "https://www.propertyguru.com.my/sunway" },
+      { label: "Nadayu28 Residences", url: "https://www.nadayu.com.my/pdf/projects/nadayu28.pdf" },
+      { label: "PropertyGuru Sunway Listings", url: "https://www.propertyguru.com.my/property-for-sale?listingType=sale&isCommercial=false&_freetextDisplay=sunway&freetext=sunway" },
     ],
     relatedFaqIds: ["accommodation-options", "on-campus-accommodation"],
     relatedGuideIds: ["transport-around-sunway", "cost-of-living"],
@@ -346,7 +346,7 @@ Try to open your account within your first two weeks. Some branches accept your 
     lastUpdated: "2026-03-28",
     disclaimer: "Bus schedules and fare prices change periodically — check official BRT/RapidKL channels for the latest timing.",
     importantLinks: [
-      { label: "RapidKL BRT Sunway Line", url: "https://www.rapidkl.com.my/brt-sunway" },
+      { label: "RapidKL BRT Sunway Line", url: "https://myrapid.com.my/bus-train/rapid-kl/brt/" },
     ],
     relatedFaqIds: ["airport-to-sunway", "brt-sunway-line"],
     relatedGuideIds: ["find-accommodation"],
@@ -381,7 +381,7 @@ Try to open your account within your first two weeks. Some branches accept your 
     lastUpdated: "2026-04-05",
     disclaimer: "Insurance coverage details can change between intakes. Always check your specific policy document through the Micare Portal.",
     importantLinks: [
-      { label: "Micare Student Insurance Portal", url: "https://www.micare.com.my/portal" },
+      { label: "Micare Student Insurance Portal", url: "https://eclaims.micaresvc.com/" },
     ],
     relatedFaqIds: ["student-insurance-coverage", "emergency-contacts"],
     relatedGuideIds: ["before-arrival-checklist", "open-bank-account"],

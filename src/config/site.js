@@ -46,7 +46,7 @@ export const SOCIAL_LINKS = {
   tiktok: "https://www.tiktok.com/@ppi.eunoia/",
   youtube: "https://www.youtube.com/@ppimonashmalaysia9894",
   spotify: "https://open.spotify.com/show/0ygQcEUwrGbEelJMc2fhpp",
-  whatsapp: "https://chat.whatsapp.com/B8gnqaNtpdiD5M69XW02Mj",
+  whatsapp: "https://chat.whatsapp.com/Jow9rWRT4AJD2l47dulEA4",
   email: "ppimonashmalaysia@gmail.com",
   website: "https://ppimonashmalaysia.com/",
 };
@@ -79,14 +79,6 @@ export const STATS = [
 // Short, timely notices shown on the homepage strip. Newest first.
 // `link` may be an internal route (e.g. "/events/...") or null for plain text.
 export const ANNOUNCEMENTS = [
-  {
-    id: "mini-welpar-2026",
-    text: {
-      en: "Mini Welpar opens Semester 2 on 8 Aug — details to be announced.",
-      id: "Mini Welpar membuka Semester 2 pada 8 Agu — detail akan diumumkan.",
-    },
-    link: "/events/mini-welpar-2026",
-  },
   {
     id: "independence-day-2026",
     text: {
