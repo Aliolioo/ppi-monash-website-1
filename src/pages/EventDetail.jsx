@@ -8,6 +8,7 @@ import { StatusBadge } from "../components/StatusBadge";
 import { EventCard } from "../components/EventCard";
 import { EVENTS } from "../config/siteConfig";
 import { findEventById, getRelatedEvents } from "../utils/events";
+import { getAssetUrl } from "../utils/assets";
 import { useLang } from "../i18n/LanguageContext";
 
 export default function EventDetail() {
@@ -55,7 +56,7 @@ export default function EventDetail() {
           <div className="event-poster">
             {event.poster ? (
               <img 
-                src={event.poster.startsWith("/") ? `${import.meta.env.BASE_URL}${event.poster.slice(1)}` : event.poster} 
+                src={getAssetUrl(event.poster)}
                 alt={tc(event.title)} 
               />
             ) : (

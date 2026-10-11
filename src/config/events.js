@@ -125,7 +125,7 @@ export const EVENTS = [
     venue: "Monash Sports Centre, Sunway",
     category: "Sports",
     status: "completed",
-    poster: null,
+    poster: "/assets/photos/articles_cover/one-world-2026-cover.jpeg",
     description: {
       en: "MUISS OneWorld brought students together representing their country in four different sports — a wonderful celebration of unity through competition. PPI Monash fielded teams across futsal, badminton, basketball, and tug-of-war, finishing as one of the top three contingents overall.",
       id: "MUISS OneWorld mempertemukan mahasiswa yang mewakili negaranya dalam empat cabang olahraga berbeda — perayaan persatuan yang indah melalui kompetisi. PPI Monash menurunkan tim di futsal, bulu tangkis, basket, dan tarik tambang, dan finis sebagai salah satu dari tiga kontingen terbaik secara keseluruhan.",
@@ -177,7 +177,7 @@ export const EVENTS = [
     venue: "To be announced",
     category: "Cultural",
     status: "completed",
-    poster: null,
+    poster: "/assets/photos/articles_cover/ppi-independence-day-angravi-2026-cover.png",
     description: {
       en: "Part of Kabinet Eunoia's Semester 2 2026 program — full details to be announced.",
       id: "Bagian dari program Kabinet Eunoia Semester 2 2026 — detail lengkap akan diumumkan.",
@@ -200,7 +200,7 @@ export const EVENTS = [
     venue: "To be announced",
     category: "Cultural",
     status: "upcoming",
-    poster: null,
+    poster: "/assets/photos/event_cover/monashculturalnight2024.png",
     description: {
       en: "Part of Kabinet Eunoia's Semester 2 2026 program — date tentative, details to be announced.",
       id: "Bagian dari program Kabinet Eunoia Semester 2 2026 — tanggal tentatif, detail akan diumumkan.",
@@ -223,7 +223,7 @@ export const EVENTS = [
     venue: "To be announced",
     category: "Welcome",
     status: "upcoming",
-    poster: null,
+    poster: "/assets/photos/event_cover/rantauheist.png",
     description: {
       en: "Part of Kabinet Eunoia's Semester 2 2026 program — full details to be announced.",
       id: "Bagian dari program Kabinet Eunoia Semester 2 2026 — detail lengkap akan diumumkan.",
@@ -246,7 +246,7 @@ export const EVENTS = [
     venue: "To be announced",
     category: "Community",
     status: "upcoming",
-    poster: null,
+    poster: "/assets/photos/event_cover/kumpulyuk.png",
     description: {
       en: "A monthly community get-together — part of Kabinet Eunoia's Semester 2 2026 program. Details to be announced.",
       id: "Kumpul komunitas bulanan — bagian dari program Kabinet Eunoia Semester 2 2026. Detail akan diumumkan.",
