@@ -277,7 +277,7 @@ After an idea is greenlit, they go through different stages to ensure the idea c
 - Promotion: Both societies promote the event through social media via reels, stories, and registration posts that explain details of the event. For respective societies, they also share the event through the group chat to ensure members can support the collaboration.
  
 In the end, through all the hard work, both societies can create a special event that unites students of different interests and creates an environment where everyone can not only connect with more people, but also have a memorable great time. It is a rare occasion where two societies can strengthen their bond through their collaborative efforts and a great time for members of our Indonesian community to make friends with people from different societies.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/ppi-collab-spotlight-2026-cover.JPG",
     externalUrl: null,
     featured: false,
     relatedArticles: [],
@@ -310,7 +310,7 @@ Most banks near Monash Malaysia (Sunway) will ask for these documents:
 The sooner you open your account, the better. After the first two weeks, your visa sticker will be processed, which you will most likely need for your new bank account. Though some banks accept the approval letter as a substitute, others only accept the sticker, so make an early call.
  
 Tips for new students: Branches inside shopping malls (like Sunway Pyramid) usually have shorter queues on weekdays compared to standalone branches. Bring a friend who’s been through the process before so they can run you through the process in person. This saves a lot of time without having to ask the staff too many questions`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/banking-101-malaysia-2026-cover.jpg",
     externalUrl: null,
     featured: true,
     relatedArticles: [],
@@ -340,7 +340,7 @@ Here are a couple of tips from off-campus students to help catch the shuttle on 
 - Check the driver group chat if your residence has one
  
 If none of these methods work, then walking to class is always an option. Most residences are only 10-15 minutes away on foot from Monash, which serves as a good exercise to start your day when you have early classes.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/shuttle-bus-survival-guide-2025-cover.jpg",
     externalUrl: null,
     featured: false,
     relatedArticles: [],
@@ -370,7 +370,7 @@ After the ceremony, the night turns brighter and cheers turn louder in celebrati
 After these celebrations, it’s easy to just tidy up the venue and move on. However, one of the benefits of being in a different country is that we can share our culture with the people around us, including those who’re unfamiliar with Indonesian culture. Usually after the events, we share an aftermovie to commemorate the event PPI worked hard on, but it’s equally important to share our culture with other people to enhance diversity in Monash. So when the opportunity comes, don’t hesitate to share some information regarding Indonesian culture to your non-Indonesian friends!
  
 Independence Day far from home may not feel the same, but PPI Monash will try their best to create a special event to cater to all Indonesian students.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/merdeka-spirit-on-campus-2025-cover.jpg",
     externalUrl: null,
     featured: false,
     relatedArticles: [],
@@ -409,7 +409,7 @@ On top of that, here are additional tips that help with socializing:
 - Attend the first class. A lot of people tend to skip this, but the first class is focused on introducing people to each other. So don’t miss it!
  
 The important thing to remember is that things will get easier. It’s always rough to take the first step, but once you pass that barrier, getting through your first semester and the ones after becomes more familiar. Remember to take things slow, but don’t be afraid to step out of your comfort zone.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/settling-into-monash-2025-cover.jpg",
     externalUrl: null,
     featured: false,
     relatedArticles: [],

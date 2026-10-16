@@ -4,6 +4,7 @@
 import { Link } from "react-router-dom";
 import { FadeIn } from "./FadeIn";
 import { SITE_INFO, STATS } from "../config/siteConfig";
+import { getAssetUrl } from "../utils/assets";
 import { useLang } from "../i18n/LanguageContext";
 
 export function About() {
@@ -44,16 +45,40 @@ export function About() {
           <div className="about-visual">
             <div className="about-image-grid">
               {[
-                { bg: "linear-gradient(135deg, #B22234, #DC3545)", color: "#fff", icon: "🇮🇩", word: t("about.wordUnity") },
-                { bg: "linear-gradient(135deg, #D4A843, #F0D78C)", color: "#1A1A1A", icon: "🎓", word: t("about.wordGrowth") },
-                { bg: "linear-gradient(135deg, #F5EDE0, #FFF8F0)", color: "#1A1A1A", icon: "🤝", word: t("about.wordFriendship") },
-                { bg: "linear-gradient(135deg, #1A1A1A, #4A4A4A)", color: "#fff", icon: "✨", word: "Eunoia" },
+                {
+                  image: "unity-cover.JPG",
+                  alt: "PPI Monash members gathered together at an event",
+                  icon: "🇮🇩",
+                  word: t("about.wordUnity"),
+                },
+                {
+                  image: "growth-cover.JPG",
+                  alt: "A PPI Monash member speaking at an event",
+                  icon: "🎓",
+                  word: t("about.wordGrowth"),
+                },
+                {
+                  image: "friendship-cover.JPG",
+                  alt: "PPI Monash members collaborating at a student event",
+                  icon: "🤝",
+                  word: t("about.wordFriendship"),
+                },
+                {
+                  image: "eunoia-cover.JPG",
+                  alt: "PPI Monash members gathered on campus",
+                  icon: "✨",
+                  word: "Eunoia",
+                },
               ].map((card, i) => (
                 <div
                   className={`about-img-card ${i === 1 ? "offset" : ""}`}
                   key={i}
-                  style={{ background: card.bg, color: card.color }}
                 >
+                  <img
+                    src={getAssetUrl(`/assets/photos/about/${card.image}`)}
+                    alt={card.alt}
+                    className="about-img-photo"
+                  />
                   <span className="card-icon">{card.icon}</span>
                   <span className="card-word">{card.word}</span>
                 </div>
