@@ -66,7 +66,7 @@ Unfortunately, we did experience some losses, as just before we could make it to
 Overall, this event based around sportsmanship and international rivalries was another success from MUISS. PPI is glad to have participated in this event and represented Indonesia once more with our hardworking and talented players. Here’s to hoping the next MUISS event will be another great one!
 
 As we wait for that, **please remember to keep in touch with updates from PPI,** as new content will appear every so often. **We even recently hosted a new podcast episode, so please do watch that if you haven’t already!** Until the next new content, we hope you will **continue to support PPI and stay updated on the latest news!**`,
-  coverImage: null,
+  coverImage: "/assets/photos/articles_cover/one-world-2026-cover.jpeg",
   externalUrl: "https://ppimonashmalaysia.com/articles/one-world-2026/",
   featured: true,
   relatedArticles: ["study-tips-2026", "banking-101-malaysia-2026"],
@@ -101,7 +101,7 @@ As we wait for that, **please remember to keep in touch with updates from PPI,**
    Balancing studies and social life is not easy, hence it’s important to **take care of your physical and mental health. Exercise regularly, spend some time with your hobbies, and ensure you get enough sleep.** A healthy mind and body helps both your academic success and social interactions.
 
 In conclusion, balancing your studies and community life can be challenging and requires practice. However, it’s incredibly important and rewarding so you can **make the most of your time in university.** Remember to frequently assess your progress: Are you balancing your academic pursuits and social life harmoniously or are there any tips or strategies you can implement to improve your university life? It may be tough at first, but **take things slow** and **embrace the journey.** We hope these tips will help you and please stay tuned for upcoming news from us!`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/study-tips-2026-cover.jpeg",
     externalUrl: "https://ppimonashmalaysia.com/articles/study-tips-2026/",
     featured: true,
     relatedArticles: [],
@@ -130,7 +130,7 @@ In conclusion, balancing your studies and community life can be challenging and 
    Oftentimes, we focus so heavily on our routines and tasks that we forget to take things slow. Adapting to a new environment can be difficult for anyone, especially for international Muslims who’ve just moved into university. In PPI, we always remind our members to not put heavy pressure on themselves with how many tasks they have to manage. **That goes the same for you new students too!** Even while balancing the Ramadhan lifestyle and new adjustments, **remember to always check your mental health and talk to someone if you face any struggles!**
 
 Hopefully these tips will help you get through the month of Ramadhan while you’re away from your parents and give you opportunities to connect with new friends and deepen your appreciation for the festivity! PPI wishes you a wonderful Ramadhan and an enjoyable first semester in Monash University!`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/ramadhan-away-from-home-2025-cover.jpeg",
     externalUrl: "https://ppimonashmalaysia.com/articles/",
     featured: false,
     relatedArticles: [],
@@ -168,7 +168,7 @@ Transitioning to university, especially in a different culture, takes time and e
 Visit this link for more information: [Counselling & Wellness – Monash University Malaysia](https://www.monash.edu.my/student-services/support-services/counselling-and-wellness)
 
 University is not just about grades, it’s about growth. Make time for new friendships, explore Malaysian culture, and stay curious! Monash University Malaysia is more than just a campus, it’s a vibrant, global community where you belong. Welcome aboard, and here’s to a journey filled with endless possibilities!`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/tips-and-tricks-cultural-events-2025-cover.jpg",
     externalUrl: null,
     featured: false,
     relatedArticles: ["study-playlist-2025"],
@@ -217,7 +217,7 @@ University is not just about grades, it’s about growth. Make time for new frie
    This playful theme song can refresh your energy and hype you up, especially when you’re rushing to finish your assignments at the last minute
 
 Each of these songs will create the right ambience for a productive study session. From John Mayer to Lana Del Rey, this playlist caters to various music preferences, all while keeping you sharply focused. Plug in your earphones, press play, and let the music do the magic.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/study-playlist-2025-cover.png",
     externalUrl: null,
     featured: false,
     relatedArticles: ["tips-and-tricks-cultural-events-2025"],
@@ -243,7 +243,7 @@ Afterwards, teams were escorted out into the fields where they’ll compete in T
 After a break from the four games, the final game began. Newspaper Towers has all teams try and build the tallest tower out of newspaper and cardboard to test their teamwork. Things get creative as the participants use clever ways to build up the tower, from curling the newspaper into thin strips to using given cardboard to ensure the tower’s steady. Some even turned the newspapers into fans to stabilize the tower. But the most unique one is the team using full cardboard to ensure stability! Every team has a different tower, showing everyone’s creativity by the end of it.
 
 Although some teams won over others, in the end PPI created an event that caters to all Indonesian students. Everyone enjoyed their time and PPI is glad to have created another special time for its community.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/kumpul-yuk-2026-cover.png",
     externalUrl: null,
     featured: false,
     relatedArticles: [],
@@ -277,7 +277,7 @@ After an idea is greenlit, they go through different stages to ensure the idea c
 - Promotion: Both societies promote the event through social media via reels, stories, and registration posts that explain details of the event. For respective societies, they also share the event through the group chat to ensure members can support the collaboration.
  
 In the end, through all the hard work, both societies can create a special event that unites students of different interests and creates an environment where everyone can not only connect with more people, but also have a memorable great time. It is a rare occasion where two societies can strengthen their bond through their collaborative efforts and a great time for members of our Indonesian community to make friends with people from different societies.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/ppi-collab-spotlight-2026-cover.JPG",
     externalUrl: null,
     featured: false,
     relatedArticles: [],
@@ -310,7 +310,7 @@ Most banks near Monash Malaysia (Sunway) will ask for these documents:
 The sooner you open your account, the better. After the first two weeks, your visa sticker will be processed, which you will most likely need for your new bank account. Though some banks accept the approval letter as a substitute, others only accept the sticker, so make an early call.
  
 Tips for new students: Branches inside shopping malls (like Sunway Pyramid) usually have shorter queues on weekdays compared to standalone branches. Bring a friend who’s been through the process before so they can run you through the process in person. This saves a lot of time without having to ask the staff too many questions`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/banking-101-malaysia-2026-cover.jpg",
     externalUrl: null,
     featured: true,
     relatedArticles: [],
@@ -340,7 +340,7 @@ Here are a couple of tips from off-campus students to help catch the shuttle on 
 - Check the driver group chat if your residence has one
  
 If none of these methods work, then walking to class is always an option. Most residences are only 10-15 minutes away on foot from Monash, which serves as a good exercise to start your day when you have early classes.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/shuttle-bus-survival-guide-2025-cover.jpg",
     externalUrl: null,
     featured: false,
     relatedArticles: [],
@@ -370,7 +370,7 @@ After the ceremony, the night turns brighter and cheers turn louder in celebrati
 After these celebrations, it’s easy to just tidy up the venue and move on. However, one of the benefits of being in a different country is that we can share our culture with the people around us, including those who’re unfamiliar with Indonesian culture. Usually after the events, we share an aftermovie to commemorate the event PPI worked hard on, but it’s equally important to share our culture with other people to enhance diversity in Monash. So when the opportunity comes, don’t hesitate to share some information regarding Indonesian culture to your non-Indonesian friends!
  
 Independence Day far from home may not feel the same, but PPI Monash will try their best to create a special event to cater to all Indonesian students.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/merdeka-spirit-on-campus-2025-cover.jpg",
     externalUrl: null,
     featured: false,
     relatedArticles: [],
@@ -409,7 +409,61 @@ On top of that, here are additional tips that help with socializing:
 - Attend the first class. A lot of people tend to skip this, but the first class is focused on introducing people to each other. So don’t miss it!
  
 The important thing to remember is that things will get easier. It’s always rough to take the first step, but once you pass that barrier, getting through your first semester and the ones after becomes more familiar. Remember to take things slow, but don’t be afraid to step out of your comfort zone.`,
-    coverImage: null,
+    coverImage: "/assets/photos/articles_cover/settling-into-monash-2025-cover.jpg",
+    externalUrl: null,
+    featured: false,
+    relatedArticles: [],
+  },
+  {
+    id: "ppi-independence-day-angravi-2026",
+    title: "PPI INDEPENDENCE DAY ANGRAVI",
+    date: "2026-08-15",
+    dateDisplay: "15 Aug 2026",
+    author: "PPI Monash Editorial",
+    category: "Event Recap",
+    tags: ["independence day", "event recap"],
+    excerpt:
+      "In the seclusion of the badminton court on 15th of August 2026, PPI Monash hosted a wonderful event celebrating the anniversary of Indonesia’s independence.",
+    body: `In the seclusion of the badminton court on 15th of August 2026, PPI Monash hosted a wonderful event celebrating the anniversary of Indonesia’s independence. Our committee members helped prepare the event early on and not much later, guests of around thirty people arrived to join alongside us to commemorate Indonesia in a series of games and a flag ceremony. 
+
+  After days of preparation, the event started with the traditional upacara bendera, where everyone gathered in lines and saluted the Indonesian flag being raised as they sang the national anthem and prayed for the prosperity of the country. We also recited the five principles of Pancasila to remind ourselves of our country’s values. Afterwards, the event properly started with PPI’s president giving a speech to welcome all participants and the MC warming things up with a crossword puzzle to break the ice and stir the participants’ competitive energy! There were so many out-of-pocket answers from the crossword that one participant said, “The jokes were kind of cheesy, not gonna lie. Some of us barely get it, but when the answers were announced, it made a lot more sense,”
+
+  Moving on from the icebreaker, teams of six were separated into three different posts, each consisting of two teams who’ll compete against each other in a game! Each post hosted a different game often played by Indonesian kids during Independence day. The first game, Estafet Balon had teams form a line and try to pass around two cups stuck together using balloons. How do you use balloons to move around a cup? By inflating them, of course! Members should pass around the cups by inflating their balloons on one side until it gets stuck in one cup, while the next person in line tries to take the cup by inflating their own balloon! Many teams were fast, some not so much. As punishment for losing the game, they have to act as face for PPI and do a popular tiktok dance to be shared to the public.
+
+  The next game, Water Rush, involved a team carrying a cup of water using only tali raffia. Their goal was to move the cup as fast as they could and make it to the finish line before the other team. This simple game prompted a lot of teamwork and stability for each team. Some managed to make it to the end ‘slow and steady’ style, while others spilled so much water that they had to restart!
+
+  The third post is a staple amongst all Independence day celebrations, Tarik Tambang! This one’s a classic where two teams compete against each other in pulling a rope until the flag at the center gets pulled onto a team’s side! It was a tough match, as many complained about the hot weather in which the game took place. But some people – mostly boys – also enjoyed the vigorousness of the game, mixing physical energy and heated competition to make the games more entertaining.
+
+  After competing in a series of fun minigames, it’s time for the big finale! The final game has teams searching for different colored balls by completing tasks in different posts. This time, there are five posts, each only able to host one team to finish the task, with the exception of one post able to host two. There’s a catch though, as when you’re outside the post searching for balls, our committees will try and chase you around and tag you to ensure you lose points! It’s a tough challenge, one that requires coordination and good teamwork. The atmosphere was so chaotic, you could practically hear the screams from inside the badminton court! “It was the highlight of the day for me,” says one participant from team Tan Malaka. “I’m not usually an ‘exercise’ person, but I loved answering the questions and the atmosphere was so thrilling that I honestly didn’t care how tired I was,”
+
+  Some didn’t share the same sentiment, hence after a long day of playing games, our committee decided to reward the participants with some delicious donuts to take a breather! The cool atmosphere of the badminton court also helped with the relaxation, with some agreeing that future events should take place here again just because of the AC. 
+
+  Finally comes the end of our event, where we announced the winners of the PPI Independence Day Angravi event! You can check our instagram highlight at @ppimonash_my to find out our winners, but long story short the event was a blast from beginning to end. Though some participants complained about the hot weather outside, ultimately most enjoyed the event and are willing to attend another PPI-hosted event! So if you’re one of those people, be sure to keep updated through our instagram and whatsapp group! Here’s to another successful event from PPI and a Happy Independence Day!`,
+    coverImage: "/assets/photos/articles_cover/ppi-independence-day-angravi-2026-cover.png",
+    externalUrl: null,
+    featured: false,
+    relatedArticles: [],
+  },
+  {
+    id: "welcome-party-rantau-heist-2026",
+    title: "PPI Semester 1 2026 Welcome Party: Rantau Heist",
+    date: "2026-03-01",
+    dateDisplay: "1 Mar 2026",
+    author: "PPI Monash Editorial",
+    category: "Event Recap",
+    tags: ["welcome party", "event recap"],
+    excerpt:
+      "To start off the current semester, PPI recently held a welcome party for all Indonesian newcomers!",
+    body: `To start off the current semester, PPI recently held a welcome party for all Indonesian newcomers! Filled with fun games and many people, the welcome party is an event catered to welcome new students and help familiarize them to PPI. They act as sort of ice-breakers to the semester so new students get the chance to make new friends while the event features food, games, and activities to encourage interaction between students. Overall, this is a great way for new students to help make themselves feel more comfortable in a new environment!
+
+  This semester’s welcome party is different from our previous ones, with the theme being Rantau Heist! Inspired by the Netflix show Money Heist, the entire event is designed to feel like you’re on a heist mission to get as much money as possible. The games also involve a lot of strategic thinking, enforcing participants to think and work together to win the games. It’s a great way for students to not only have fun, but also improve their teamwork, communication, and strategy. 
+
+  Although this welcome party is made for new students, even old faces are welcome to join! A lot of our committee members joined this semester’s welcome party to support our hard work, and we even saw familiar faces from last year’s welcome party who were back for more! We welcome everyone who wishes to have fun and support us through this event.
+
+  Our first event of the year has been an absolute blast! Considering how the games were designed to feel like a heist, most of them involved numbers and a little bit of risk-taking; but the games were also very diverse and that’s what made them fun. Some of the games involved prediction, memory, and calculation; such as the case in Unlock the Lock Code, where two teams were racing to figure out the code to a padlock. One of the teams solved so fast, it was incredible! Some of the games also involved a significant amount of physical strength. For instance, in the game Money Heist, the team was tasked to split themselves into guards and thieves, where the thieves had to go through the opposing guards who protected a treasure box, while rival thieves did the same against our guards. Agility and perception was important in these games, and a lot of us were tired from running! But if there was one thing that stood out from this event, it’s the availability of the traitor amongst every team. This is something unique to this event, bringing something new compared to previous welcome parties. It also made the participants more wary of their own allies as they played the games, which brought more stakes into each game! Overall, this heist-themed party is another welcome memory for not just the participants, but for PPI as well.
+
+  PPI hopes all participants had a wonderful time during the event and looks forward to seeing you again in the next one. Remember to check our instagram for the latest updates and events! We wish everyone a wonderful semester in 2026!`,
+    coverImage: "/assets/photos/articles_cover/welcome-party-rantau-heist-2026-cover.jpeg",
     externalUrl: null,
     featured: false,
     relatedArticles: [],

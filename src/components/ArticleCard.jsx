@@ -5,6 +5,7 @@
 // ============================================================================
 import { Link } from "react-router-dom";
 import { CATEGORY_ICONS, DEFAULT_ARTICLE_ICON } from "../utils/articles";
+import { getAssetUrl } from "../utils/assets";
 import { useLang } from "../i18n/LanguageContext";
 
 export function ArticleCard({ article }) {
@@ -14,7 +15,7 @@ export function ArticleCard({ article }) {
       <div className="article-thumb">
         <div className="thumb-pattern" />
         {article.coverImage ? (
-          <img src={article.coverImage} alt={tc(article.title)} className="thumb-image" />
+          <img src={getAssetUrl(article.coverImage)} alt={tc(article.title)} className="thumb-image" />
         ) : (
           <span className="thumb-icon">
             {CATEGORY_ICONS[article.category] || DEFAULT_ARTICLE_ICON}

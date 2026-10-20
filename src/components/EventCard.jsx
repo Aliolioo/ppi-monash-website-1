@@ -5,12 +5,20 @@
 // ============================================================================
 import { Link } from "react-router-dom";
 import { StatusBadge } from "./StatusBadge";
+import { getAssetUrl } from "../utils/assets";
 import { useLang } from "../i18n/LanguageContext";
 
 export function EventCard({ event }) {
   const { t, tc, tcat } = useLang();
   return (
     <Link to={`/events/${event.id}`} className="event-card">
+      {event.poster && (
+        <img
+          src={getAssetUrl(event.poster)}
+          alt={tc(event.title)}
+          className="event-card-image"
+        />
+      )}
       <div className="event-card-header">
         <div className="event-meta">
           <span className="event-date">{event.dateDisplay}</span>

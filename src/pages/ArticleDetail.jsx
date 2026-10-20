@@ -8,6 +8,7 @@ import { ArticleCard } from "../components/ArticleCard";
 import { ARTICLES } from "../config/siteConfig";
 import { findArticleById, getRelatedArticles, CATEGORY_ICONS, DEFAULT_ARTICLE_ICON } from "../utils/articles";
 import renderMarkdown from "../utils/markdown";
+import { getAssetUrl } from "../utils/assets";
 import { useLang } from "../i18n/LanguageContext";
 
 function getExternalDomain(url) {
@@ -79,7 +80,7 @@ export default function ArticleDetail() {
       <FadeIn delay={0.1}>
         <div className="article-detail-cover">
           {article.coverImage ? (
-            <img src={article.coverImage} alt={tc(article.title)} />
+            <img src={getAssetUrl(article.coverImage)} alt={tc(article.title)} />
           ) : (
             <span className="cover-icon">
               {CATEGORY_ICONS[article.category] || DEFAULT_ARTICLE_ICON}
