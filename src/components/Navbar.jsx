@@ -62,7 +62,13 @@ export function Navbar() {
     <>
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <Link to="/" className="nav-brand" onClick={closeMenu}>
-          <span className="logo-circle">PPI</span>
+          <img
+            src={`${import.meta.env.BASE_URL}logo-2.png`}
+            alt=""
+            className="logo-circle"
+            width="42"
+            height="42"
+          />
           <span className="brand-text">{SITE_INFO.name}</span>
         </Link>
 
